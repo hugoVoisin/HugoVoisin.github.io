@@ -1,0 +1,95 @@
+.menu_list_element {
+  display: flex;
+  animation: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1 slideInFromLeft;
+  width: 20%;
+  transition: padding-left 0.7s ease;
+
+}
+
+.menu_list_element:hover {
+  color: red;
+  margin-left: 2vw;
+  transition: margin-left 0.7s ease;
+  width: fit-content;
+}
+
+.menu_list_element a{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-style: italic;
+  vertical-align: text-top;
+}
+
+.menu_list_element p{
+  line-height: 1vw;
+  font-size: 0.8vw;
+  margin-top: 0.3vw;
+  margin-left: 10px;
+}
+
+.menu_container_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: calc(4 * 9.8vw);
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.hover_image {
+  visibility: hidden;
+}
+
+.hover_image {
+  display:flex;
+  height: 19.6vw;
+  pointer-events: none;
+  position: fixed;
+  object-fit: cover;
+  bottom: 20%;
+}
+
+.menu_list_element:hover + .hover_image {
+  visibility: visible;
+  pointer-events: none;
+}
+
+.tag{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  width: 20%;
+  align-items: center;
+  display: flex;
+}
+
+.spacer {
+  height: 100%;
+  width: 0;
+}
+
+.navBarIndex{
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.tagSelector{
+  background-color: transparent; /* Green */
+  border: none;
+  padding: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.tagSelector:hover{
+  font-weight: bold;
+  color: red;
+}
+
+.menu_list_element p{
+  text-transform: uppercase;
+}
