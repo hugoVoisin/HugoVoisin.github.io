@@ -89,7 +89,7 @@
 .article_img_5{
   grid-column: 6 / 10;
   grid-row: 13 / 14;
-  background-image: url(./img/jaguar_font_1.svg);
+  background-image: url(/img/jaguar_font_1.svg);
   background-color: white;
 }
 .article_img_6{
@@ -101,14 +101,14 @@
 .article_img_8{
   grid-column: 5 / 10;
   grid-row: 15 / 19;
-  background-image: url(/img/jaguar_visuel.png);
+  background-image: url(/img/jaguar_visuel.webp);
   background-position: 20%;
   background-size: cover;
 }
 .article_img_7{
   grid-column: 2 / 4;
   grid-row: 17 / 19;
-  background-image: url(/img/jaguar_visuel_2.png);
+  background-image: url(/img/jaguar_visuel_2.webp);
   background-position: center;
   background-size: cover;
 }

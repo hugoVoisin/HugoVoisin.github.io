@@ -57,8 +57,8 @@
   left: 11.5vw;
   top: 5.9vw;
   transform: rotate(-10deg);/*
-  background-image: url(/img/print_1.png);
-  background-size: cover  ;*/
+  background-image: url(/img/print_1.webp);
+  background-size: cover;*/
 }
 
 .img_1 img{
@@ -76,7 +76,7 @@
   left: 32.2vw;
   top: 5vw;
   transition: rotate(11deg);
-  background-image: url(/img/print_2.png);
+  background-image: url(/img/print_2.webp);
   background-size: 120%;
   background-position: center;
 }
@@ -88,7 +88,7 @@
   left: 7.6vw;
   top: 19vw;
   tranform: rotate(-9deg);
-  background-image: url(/img/print_3.png);
+  background-image: url(/img/print_3.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -100,7 +100,7 @@
   left: 43.2vw;
   top: 16.3vw;
   transform: rotate(1deg);
-  background-image: url(/img/print_6.png);
+  background-image: url(/img/print_6.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -112,7 +112,7 @@
   left: 39.7vw;
   top: 27.7vw;
   transform: rotate(-5deg);
-  background-image: url(/img/print_4.png);
+  background-image: url(/img/print_4.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -124,7 +124,7 @@
   left: 24.7vw;
   top: 22.7vw;
   transform: rotate(-8deg);
-  background-image: url(/img/print_5.png);
+  background-image: url(/img/print_5.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -136,7 +136,7 @@
   left: 31.7vw;
   top: 36.7vw;
   transform: rotate(0deg);
-  background-image: url(/img/print_7.png);
+  background-image: url(/img/print_7.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -148,7 +148,7 @@
   left: 5.5vw;
   top: 34.7vw;
   transform: rotate(8deg);
-  background-image: url(/img/print_8.png);
+  background-image: url(/img/print_8.webp);
   background-size: 100%;
   background-position: center;
 }
