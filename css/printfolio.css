@@ -87,7 +87,7 @@
   height: 18.2vw;
   left: 7.6vw;
   top: 19vw;
-  tranform: rotate(-9deg);
+  transform: rotate(-9deg);
   background-image: url(/img/print_3.webp);
   background-size: 100%;
   background-position: center;
