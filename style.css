@@ -204,8 +204,10 @@ border: 1px solid var(--text-color);
 }
 
 .el_7 .menu_img {
-  background-image: url(./img/quechua_cover.webp);
-  background-position: 70%;
+  background-image: url(./img/captarget_cover.webp);
+  transition: width 1s ease;
+  background-position-x: 47%;
+  background-position-y: 40%;
 }
 
 .el_8 .menu_img {
