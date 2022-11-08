@@ -12,7 +12,7 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   
-  <body>
+  <body id="top">
     <!-- Main Nav Bar -->
     <div class="navMain">
       <div class="nav_grid_container">
@@ -46,7 +46,7 @@
 
     <!-- Cover -->
     <div class="cover_container">
-      <div class="grid_header" id="top">
+      <div class="grid_header" >
         <div class="hero_img"></div>
 
         <div class="article_title_element">
@@ -82,7 +82,8 @@
         
         <a href="#top" class="progressNavItem_last">
           <div class="backTotop">
-            <div>Back to top</div>
+            <div id="labelTop" style="display: none;">Back to top</div>
+            <div id="labelScroll">Scroll</div>
             <div class="upIcon" id="upIcon"><i class="ri-arrow-down-line" style="font-size:20px; line-height: 1.2;"></i></div>
           </div>
         </a>
@@ -113,6 +114,8 @@
           <div class="article_img_2 article_img">
           </div>
 
+          <div id="typo" style="grid-row: 6/6; top: 47px; height: 10%; align-self: flex-end;"></div>
+
           <div class="article_img_3 article_img">
           </div>
 
@@ -125,42 +128,76 @@
               C’est en expérimentant avec différentes police que le pictogramme du cycliste s’est formé. Il fallait une font rationnelle, sans serif,hyper géométrique tout en gardant un caractère lisible et utilisable partout. Cette fonte provient de la fonderie <a href="https://www.swisstypefaces.com/fonts/euclid/">SwissTypeface</a> et fait partie d’une famille de 5 déclinaison autour d’un concept commun : des lettres géométriques. Les lettres rondes sont les roues du vélo comme le a et le o et les lettres linéaires comme le m ou le s s’apparentent à un tracé, une bande cyclable, un itinéraire de livraison. La typographie est parfaite le web avec un oeil faible et des caractères plutôt bien différenciés. Les glyphes étant très géométrique cela permet d’utiliser un corps de texte un peu plus petit que la normale et ainsi mieux répartir le texte sur la page.</p>
           </div>
 
-          <div class="article_img_4 article_img">
-          </div>
+          <div id="color" style="grid-row: 10/10; top: 47px; height: 10%; align-self: center;"></div>
+
+          <div style="background: #F7F4D2; grid-column: 1/2; grid-row: 11/12;">#F7F4D2</div>
+          <div style="background: #F5F5CB; grid-column: 2/3; grid-row: 11/12;">#F5F5CB</div>
+          <div style="background: #E2DC3D; grid-column: 3/7; grid-row: 11/12;">#E2DC3D</div>
+          <div class="article_text" style="grid-column: 7/9; grid-row: 11/12;">Deux couleurs se dégagent de l’univers visuel du vélo, l’orange et le jaune fluo. Couleurs ultra visible porté en gilet de haute visibilité, en catadioptre ou encore sur des outils de réparations.</div>
+
+          <div style="background: #D95C39; grid-column: 5/9; grid-row: 12/13;">#D95C39</div>
+          <div style="background: #ECAD9C; grid-column: 9/10; grid-row: 12/13;">#ECAD9C</div>
+          <div style="background: #F5D6CD; grid-column: 10/11; grid-row: 12/13;">#F5D6CD</div>
+
+          <div style="background: #59A6A7; grid-column: 1/2; grid-row: 13/14;">#59A6A7</div>
+          <div style="background: #CDE5E5; grid-column: 2/3; grid-row: 13/14;">#CDE5E5</div>
+          <div style="background: #DDEDEE; grid-column: 3/4; grid-row: 13/14;">#DDEDEE</div>
+          <div style="background: #525464; grid-column: 4/5; grid-row: 13/14;">#525464</div>
+          <div style="background: #CACAD0; grid-column: 5/6; grid-row: 13/14;">#CACAD0</div>
+          <div style="background: #EFEFF1; grid-column: 6/7; grid-row: 13/14;">#EFEFF1</div>
+          <div style="background: #1E1925; grid-column: 8/9; grid-row: 13/14;">#1E1925</div>
+          <div style="background: #BBB9BD; grid-column: 9/10; grid-row: 13/14;">#BBB9BD</div>
+          <div style="background: #EEEDEE; grid-column: 10/11; grid-row: 13/14;">#EEEDEE</div>
+
+          <div class="article_text" style="grid-column: 7/8; grid-row: 13/14;">La palette de couleur secondaire est majorairement utilisé sur le site web ainsi que pour la communication sur le web et les réseaux sociaux.</div>
+
+          <div id="assets" style="grid-row: 14; top: 47px; height: 10%; align-self: center;"></div>
           
-          <div class="article_text_4 article_text">
-            <p></p>
+          <div class="article_text" style="grid-column: 3/5; grid-row: 15/15;">Des éléments visuels 3D ont été crées pour accompagner le logo dans le déploiement de la charte graphique. On retrouve les couleurs primaires mais aussi l’ambiance graphique du logo, avec des modèles 3D composé de primitives comme des tubes ou des carrés aux bords biseautés pour arrondi au maximun leurs arrêtes.
           </div>
 
-          <div class="article_img_5 article_img">
+          <div class="article_img article_img" style="grid-column: 5/7; grid-row: 15/17;">
           </div>
 
-          <div class="article_text_5 article_text">
-            <p></p>
+          <div class="article_img article_img" style="grid-column: 8/11; grid-row: 17/19;">
           </div>
 
-          <div class="article_text_6 article_text">
-            <p></p>
-          </div>
-          <div class="article_img_6 article_img">
+          <div class="article_img article_img" style="grid-column: 2/6; grid-row: 18/20;">
           </div>
 
-          <div class="article_img_7 article_img">
+          <div class="article_text" style="grid-column: 6/8; grid-row: 18/19;">On PEUT TROUVER ces modèles sur tout les élèments de comunication de dinamo, de l’affiche aux posts pour les réseaux sociaux en passant par le site web.Il est très facile de venir créer de nouveaux items pour constituer une banque de modèles 3D répondant à toutes les situations possibles.
           </div>
 
-          <div class="article_img_8 article_img">
+          <div class="article_img article_img" style="grid-column: 7/9; grid-row: 19/21;">
           </div>
 
-          <div class="article_text_7 article_text">
-          <p></div>
+          <div class="article_text" style="grid-column: 2/3; grid-row: 22/23;">On PEUT TROUVER ces modèles sur tout les élèments de comunication de dinamo, de l’affiche aux posts pour les réseaux sociaux en passant par le site web.Il est très facile de venir créer de nouveaux items pour constituer une banque de modèles 3D répondant à toutes les situations possibles.
+          </div>
 
-        </div>
-    </div>
+          <div class="article_img article_img" style="grid-column: 3/9; grid-row: 22/24;">
+          </div>
 
+          <div class="article_img article_img" style="grid-column: 3/9; grid-row: 22/24;">
+          </div>
 
+          <div class="article_img article_img" style="grid-column: 1/7; grid-row: 25/28;">
+          </div>
 
-      <div class="article_container">
-        <div class="grid_article">
+          <div class="article_img article_img" style="grid-column: 8/11; grid-row: 25/28;">
+          </div>
+
+          <div class="article_img article_img" style="grid-column: 2/8; grid-row: 29/32;">
+          </div>
+
+          <div class="article_img article_img" style="grid-column: 3/5; grid-row: 33/35;">
+          </div>
+
+          <div class="article_img article_img" style="grid-column: 6/10; grid-row: 33/35;">
+          </div>
+
+          <div class="article_img article_img" style="grid-column: 2/10; grid-row: 36/40;">
+          </div>
+
             <!-- credits / infos-->
             <div class="info_project">
               <div class="article_separator">
@@ -197,7 +234,7 @@
             </div>
 
         </div>
-      </div>
+    </div>
 
 <!-- footer -->
 <footer>
@@ -208,47 +245,47 @@
   <div class="footer_container">
     <div class="col_1">
       <svg class="monogram" alt="Monogramme Hugo Voisin"  version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 346 121.2" style="enable-background:new 0 0 346 121.2;" xml:space="preserve"><g>
-<rect x="0" y="0" width="15" height="116"/>
-<polygon points="25,49.2 25,116 40,116 40,64.2 59.9,64.2 99.5,116 118.4,116 67.3,49.2 	"/>
-<polygon points="189.3,96.2 189.3,30.1 174.3,30.1 174.3,81.2 154.7,81.2 115.6,30.1 96.7,30.1 147.3,96.2 	"/>
-</g>
-<polygon points="199.3,30.1 199.3,106.2 142.4,106.2 79.6,24.2 40,24.2 40,0 25,0 25,39.2 72.2,39.2 135,121.2 214.3,121.2 
-214.3,30.1 "/>
-<g>
-<path d="M233.6,54.1v-24h4.6V40h9.6v-9.9h4.6v24h-4.6V43.9h-9.6v10.3H233.6z"/>
-<path d="M258,45.6V30.1h4.6v15.6c0,1.5,0.4,2.8,1.2,3.7c0.8,0.9,2,1.3,3.6,1.3c1.6,0,2.8-0.4,3.6-1.3c0.8-0.9,1.2-2.1,1.2-3.7V30.1
-h4.5v15.5c0,1.4-0.2,2.6-0.7,3.8s-1.1,2.1-1.9,2.9c-0.8,0.8-1.8,1.4-2.9,1.8c-1.1,0.4-2.5,0.6-3.9,0.6c-1.5,0-2.8-0.2-3.9-0.6
-c-1.1-0.4-2.1-1-2.9-1.8c-0.8-0.8-1.4-1.7-1.9-2.8C258.2,48.3,258,47,258,45.6z"/>
-<path d="M281.4,42.2c0-1.9,0.2-3.6,0.6-5.2c0.4-1.6,1.1-2.9,1.9-4c0.9-1.1,2-1.9,3.3-2.5c1.3-0.6,2.9-0.9,4.7-0.9
-c1.3,0,2.4,0.2,3.5,0.5s2,0.9,2.8,1.5c0.8,0.7,1.4,1.5,1.9,2.4c0.5,1,0.8,2,0.8,3.2h-4.6c-0.3-2.5-1.9-3.8-4.8-3.8
-c-1.5,0-2.8,0.4-3.8,1.3c-1,0.9-1.4,2.1-1.4,3.6v7.3c0,0.7,0.1,1.4,0.4,2c0.3,0.6,0.6,1.1,1.1,1.6c0.5,0.4,1,0.8,1.7,1
-c0.6,0.2,1.3,0.4,2.1,0.4c1.5,0,2.8-0.4,3.7-1.2c0.9-0.8,1.4-2,1.4-3.7v-1h-4.9v-3.9h9.5v13.1H297l-0.1-2.2
-c-1.2,1.8-3.1,2.7-5.8,2.7c-1.6,0-3-0.3-4.3-0.9c-1.2-0.6-2.2-1.5-3.1-2.6c-0.8-1.1-1.4-2.4-1.8-3.9
-C281.6,45.7,281.4,44,281.4,42.2z"/>
-<path d="M305.5,42.2c0-4.1,0.9-7.2,2.8-9.3c1.9-2.1,4.5-3.2,7.9-3.2c3.4,0,6,1.1,7.9,3.2s2.8,5.2,2.8,9.3c0,4.1-0.9,7.2-2.8,9.3
-c-1.9,2.1-4.5,3.2-7.9,3.2c-3.4,0-6-1.1-7.9-3.2C306.4,49.4,305.5,46.3,305.5,42.2z M310.4,45.9c0,0.8,0.2,1.5,0.5,2.1
-c0.3,0.6,0.7,1.1,1.2,1.6c0.5,0.4,1.1,0.7,1.8,0.9c0.7,0.2,1.4,0.3,2.2,0.3s1.6-0.1,2.2-0.3c0.7-0.2,1.3-0.5,1.8-0.9
-c0.5-0.4,0.9-0.9,1.2-1.6s0.5-1.3,0.5-2.1v-7.4c0-0.8-0.2-1.5-0.5-2.1c-0.3-0.6-0.7-1.1-1.2-1.6c-0.5-0.4-1.1-0.7-1.8-1
-c-0.7-0.2-1.4-0.3-2.2-0.3s-1.6,0.1-2.2,0.3c-0.7,0.2-1.3,0.5-1.8,1c-0.5,0.4-0.9,0.9-1.2,1.6c-0.3,0.6-0.5,1.3-0.5,2.1V45.9z"/>
-</g>
-<path d="M231.6,62.1h4.9l5.1,18.7h0.1l5-18.7h5l-7.6,24h-5.1L231.6,62.1z"/>
-<path d="M254.9,74.1c0-4.1,0.9-7.2,2.8-9.3c1.9-2.1,4.5-3.2,7.9-3.2c3.4,0,6,1.1,7.9,3.2c1.9,2.1,2.8,5.2,2.8,9.3
-c0,4.1-0.9,7.2-2.8,9.3s-4.5,3.2-7.9,3.2c-3.4,0-6-1.1-7.9-3.2C255.8,81.3,254.9,78.2,254.9,74.1z M259.8,77.8
-c0,0.8,0.2,1.5,0.5,2.1c0.3,0.6,0.7,1.1,1.2,1.6c0.5,0.4,1.1,0.7,1.8,0.9c0.7,0.2,1.4,0.3,2.2,0.3c0.8,0,1.6-0.1,2.2-0.3
-c0.7-0.2,1.3-0.5,1.8-0.9c0.5-0.4,0.9-0.9,1.2-1.6c0.3-0.6,0.5-1.3,0.5-2.1v-7.4c0-0.8-0.2-1.5-0.5-2.1c-0.3-0.6-0.7-1.1-1.2-1.6
-c-0.5-0.4-1.1-0.7-1.8-1c-0.7-0.2-1.4-0.3-2.2-0.3c-0.8,0-1.6,0.1-2.2,0.3c-0.7,0.2-1.3,0.5-1.8,1c-0.5,0.4-0.9,0.9-1.2,1.6
-c-0.3,0.6-0.5,1.3-0.5,2.1V77.8z"/>
-<path d="M281.2,86.1v-24h4.6v24H281.2z"/>
-<path d="M290.2,78.9h4.6c0.2,1.4,0.7,2.4,1.6,3c0.9,0.6,2.1,0.9,3.5,0.9c1.3,0,2.5-0.3,3.4-0.8c0.9-0.6,1.4-1.4,1.4-2.4
-c0-0.9-0.3-1.5-0.8-2c-0.5-0.5-1.3-0.9-2.4-1.2l-4.7-1.2c-2-0.5-3.4-1.4-4.4-2.5c-1-1.2-1.4-2.6-1.4-4.4c0-1,0.2-1.9,0.6-2.7
-c0.4-0.8,1-1.5,1.7-2.1s1.7-1,2.7-1.4c1.1-0.3,2.3-0.5,3.6-0.5c1.2,0,2.4,0.1,3.4,0.4c1.1,0.3,2,0.7,2.7,1.3
-c0.8,0.6,1.4,1.3,1.9,2.3c0.5,0.9,0.8,2,0.9,3.2h-4.6c-0.1-0.7-0.2-1.2-0.5-1.7c-0.3-0.4-0.6-0.8-1-1.1c-0.4-0.3-0.9-0.5-1.4-0.6
-c-0.5-0.1-1-0.2-1.6-0.2c-1.3,0-2.3,0.3-3,0.8c-0.7,0.5-1.1,1.2-1.1,2.1c0,0.9,0.3,1.6,0.9,2.1c0.6,0.5,1.4,0.9,2.6,1.2l4.1,1.1
-c2,0.5,3.6,1.4,4.6,2.5c1,1.1,1.6,2.6,1.6,4.6c0,1.1-0.2,2.1-0.7,3c-0.4,0.9-1.1,1.6-1.9,2.2c-0.8,0.6-1.8,1.1-2.9,1.4
-c-1.1,0.3-2.4,0.5-3.8,0.5c-1.3,0-2.6-0.1-3.7-0.4c-1.1-0.3-2.1-0.7-3-1.3c-0.9-0.6-1.6-1.4-2.1-2.4
-C290.6,81.5,290.3,80.3,290.2,78.9z"/>
-<path d="M313.8,86.1v-24h4.6v24H313.8z"/>
-<path d="M324.4,86.1v-24h6.8l7.2,18.3h0.1V62.1h4.6v24h-6.9L329,67.8h-0.1v18.3H324.4z"/>
+        <rect x="0" y="0" width="15" height="116"/>
+        <polygon points="25,49.2 25,116 40,116 40,64.2 59.9,64.2 99.5,116 118.4,116 67.3,49.2 	"/>
+        <polygon points="189.3,96.2 189.3,30.1 174.3,30.1 174.3,81.2 154.7,81.2 115.6,30.1 96.7,30.1 147.3,96.2 	"/>
+        </g>
+        <polygon points="199.3,30.1 199.3,106.2 142.4,106.2 79.6,24.2 40,24.2 40,0 25,0 25,39.2 72.2,39.2 135,121.2 214.3,121.2 
+        214.3,30.1 "/>
+        <g>
+        <path d="M233.6,54.1v-24h4.6V40h9.6v-9.9h4.6v24h-4.6V43.9h-9.6v10.3H233.6z"/>
+        <path d="M258,45.6V30.1h4.6v15.6c0,1.5,0.4,2.8,1.2,3.7c0.8,0.9,2,1.3,3.6,1.3c1.6,0,2.8-0.4,3.6-1.3c0.8-0.9,1.2-2.1,1.2-3.7V30.1
+        h4.5v15.5c0,1.4-0.2,2.6-0.7,3.8s-1.1,2.1-1.9,2.9c-0.8,0.8-1.8,1.4-2.9,1.8c-1.1,0.4-2.5,0.6-3.9,0.6c-1.5,0-2.8-0.2-3.9-0.6
+        c-1.1-0.4-2.1-1-2.9-1.8c-0.8-0.8-1.4-1.7-1.9-2.8C258.2,48.3,258,47,258,45.6z"/>
+        <path d="M281.4,42.2c0-1.9,0.2-3.6,0.6-5.2c0.4-1.6,1.1-2.9,1.9-4c0.9-1.1,2-1.9,3.3-2.5c1.3-0.6,2.9-0.9,4.7-0.9
+        c1.3,0,2.4,0.2,3.5,0.5s2,0.9,2.8,1.5c0.8,0.7,1.4,1.5,1.9,2.4c0.5,1,0.8,2,0.8,3.2h-4.6c-0.3-2.5-1.9-3.8-4.8-3.8
+        c-1.5,0-2.8,0.4-3.8,1.3c-1,0.9-1.4,2.1-1.4,3.6v7.3c0,0.7,0.1,1.4,0.4,2c0.3,0.6,0.6,1.1,1.1,1.6c0.5,0.4,1,0.8,1.7,1
+        c0.6,0.2,1.3,0.4,2.1,0.4c1.5,0,2.8-0.4,3.7-1.2c0.9-0.8,1.4-2,1.4-3.7v-1h-4.9v-3.9h9.5v13.1H297l-0.1-2.2
+        c-1.2,1.8-3.1,2.7-5.8,2.7c-1.6,0-3-0.3-4.3-0.9c-1.2-0.6-2.2-1.5-3.1-2.6c-0.8-1.1-1.4-2.4-1.8-3.9
+        C281.6,45.7,281.4,44,281.4,42.2z"/>
+        <path d="M305.5,42.2c0-4.1,0.9-7.2,2.8-9.3c1.9-2.1,4.5-3.2,7.9-3.2c3.4,0,6,1.1,7.9,3.2s2.8,5.2,2.8,9.3c0,4.1-0.9,7.2-2.8,9.3
+        c-1.9,2.1-4.5,3.2-7.9,3.2c-3.4,0-6-1.1-7.9-3.2C306.4,49.4,305.5,46.3,305.5,42.2z M310.4,45.9c0,0.8,0.2,1.5,0.5,2.1
+        c0.3,0.6,0.7,1.1,1.2,1.6c0.5,0.4,1.1,0.7,1.8,0.9c0.7,0.2,1.4,0.3,2.2,0.3s1.6-0.1,2.2-0.3c0.7-0.2,1.3-0.5,1.8-0.9
+        c0.5-0.4,0.9-0.9,1.2-1.6s0.5-1.3,0.5-2.1v-7.4c0-0.8-0.2-1.5-0.5-2.1c-0.3-0.6-0.7-1.1-1.2-1.6c-0.5-0.4-1.1-0.7-1.8-1
+        c-0.7-0.2-1.4-0.3-2.2-0.3s-1.6,0.1-2.2,0.3c-0.7,0.2-1.3,0.5-1.8,1c-0.5,0.4-0.9,0.9-1.2,1.6c-0.3,0.6-0.5,1.3-0.5,2.1V45.9z"/>
+        </g>
+        <path d="M231.6,62.1h4.9l5.1,18.7h0.1l5-18.7h5l-7.6,24h-5.1L231.6,62.1z"/>
+        <path d="M254.9,74.1c0-4.1,0.9-7.2,2.8-9.3c1.9-2.1,4.5-3.2,7.9-3.2c3.4,0,6,1.1,7.9,3.2c1.9,2.1,2.8,5.2,2.8,9.3
+        c0,4.1-0.9,7.2-2.8,9.3s-4.5,3.2-7.9,3.2c-3.4,0-6-1.1-7.9-3.2C255.8,81.3,254.9,78.2,254.9,74.1z M259.8,77.8
+        c0,0.8,0.2,1.5,0.5,2.1c0.3,0.6,0.7,1.1,1.2,1.6c0.5,0.4,1.1,0.7,1.8,0.9c0.7,0.2,1.4,0.3,2.2,0.3c0.8,0,1.6-0.1,2.2-0.3
+        c0.7-0.2,1.3-0.5,1.8-0.9c0.5-0.4,0.9-0.9,1.2-1.6c0.3-0.6,0.5-1.3,0.5-2.1v-7.4c0-0.8-0.2-1.5-0.5-2.1c-0.3-0.6-0.7-1.1-1.2-1.6
+        c-0.5-0.4-1.1-0.7-1.8-1c-0.7-0.2-1.4-0.3-2.2-0.3c-0.8,0-1.6,0.1-2.2,0.3c-0.7,0.2-1.3,0.5-1.8,1c-0.5,0.4-0.9,0.9-1.2,1.6
+        c-0.3,0.6-0.5,1.3-0.5,2.1V77.8z"/>
+        <path d="M281.2,86.1v-24h4.6v24H281.2z"/>
+        <path d="M290.2,78.9h4.6c0.2,1.4,0.7,2.4,1.6,3c0.9,0.6,2.1,0.9,3.5,0.9c1.3,0,2.5-0.3,3.4-0.8c0.9-0.6,1.4-1.4,1.4-2.4
+        c0-0.9-0.3-1.5-0.8-2c-0.5-0.5-1.3-0.9-2.4-1.2l-4.7-1.2c-2-0.5-3.4-1.4-4.4-2.5c-1-1.2-1.4-2.6-1.4-4.4c0-1,0.2-1.9,0.6-2.7
+        c0.4-0.8,1-1.5,1.7-2.1s1.7-1,2.7-1.4c1.1-0.3,2.3-0.5,3.6-0.5c1.2,0,2.4,0.1,3.4,0.4c1.1,0.3,2,0.7,2.7,1.3
+        c0.8,0.6,1.4,1.3,1.9,2.3c0.5,0.9,0.8,2,0.9,3.2h-4.6c-0.1-0.7-0.2-1.2-0.5-1.7c-0.3-0.4-0.6-0.8-1-1.1c-0.4-0.3-0.9-0.5-1.4-0.6
+        c-0.5-0.1-1-0.2-1.6-0.2c-1.3,0-2.3,0.3-3,0.8c-0.7,0.5-1.1,1.2-1.1,2.1c0,0.9,0.3,1.6,0.9,2.1c0.6,0.5,1.4,0.9,2.6,1.2l4.1,1.1
+        c2,0.5,3.6,1.4,4.6,2.5c1,1.1,1.6,2.6,1.6,4.6c0,1.1-0.2,2.1-0.7,3c-0.4,0.9-1.1,1.6-1.9,2.2c-0.8,0.6-1.8,1.1-2.9,1.4
+        c-1.1,0.3-2.4,0.5-3.8,0.5c-1.3,0-2.6-0.1-3.7-0.4c-1.1-0.3-2.1-0.7-3-1.3c-0.9-0.6-1.6-1.4-2.1-2.4
+        C290.6,81.5,290.3,80.3,290.2,78.9z"/>
+        <path d="M313.8,86.1v-24h4.6v24H313.8z"/>
+        <path d="M324.4,86.1v-24h6.8l7.2,18.3h0.1V62.1h4.6v24h-6.9L329,67.8h-0.1v18.3H324.4z"/>
       </svg>
     </div>
     <div class="col_2">
@@ -277,7 +314,6 @@ C290.6,81.5,290.3,80.3,290.2,78.9z"/>
   </div>
 </footer>
 
-    </div>
     <script type="text/javascript">
       function showTime(){
       var date = new Date();
@@ -337,8 +373,12 @@ C290.6,81.5,290.3,80.3,290.2,78.9z"/>
         scrollPercent = "-" + navPosTop * 180 + "deg";
         if (navPosTop > 0) {
           document.getElementById("upIcon").style.setProperty("--deg", scrollPercent);
+          document.getElementById("labelTop").style.setProperty("display", "block");
+          document.getElementById("labelScroll").style.setProperty("display", "none");
         } else {
           document.getElementById("upIcon").style.setProperty("--deg", base);
+          document.getElementById("labelTop").style.setProperty("display", "none");
+          document.getElementById("labelScroll").style.setProperty("display", "block");
         }
       }
 
