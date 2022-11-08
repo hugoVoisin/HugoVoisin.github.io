@@ -54,7 +54,7 @@
 }
 
 #upIcon{
-  --deg: 180deg;
+  --deg: 0 deg;
   transform: rotate(var(--deg));
 }
 

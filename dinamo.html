@@ -64,7 +64,7 @@
     </div>
 
     <!-- Secondary Nav Bar -->
-    <div class="navSecondary">
+    <div class="navSecondary" id="nav2">
       <div class="article_progress_bar_nav">
         <div class="progressNavItem progressNavtitle"><a href="#top">Dinamo</a></div>
         <div class="progressNavItem progessActive"><a href="#logo">Logo</a></div>
@@ -83,7 +83,7 @@
         <a href="#top" class="progressNavItem_last">
           <div class="backTotop">
             <div>Back to top</div>
-            <div class="upIcon" id="upIcon"><i class="ri-arrow-up-line" style="font-size:20px;"></i></div>
+            <div class="upIcon" id="upIcon"><i class="ri-arrow-down-line" style="font-size:20px;"></i></div>
           </div>
         </a>
       
@@ -385,11 +385,24 @@ C290.6,81.5,290.3,80.3,290.2,78.9z"/>
     </script>
 
     <script>
-      document.addEventListener("scroll",
-      function() {
-        var scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
-        var scrollBottom =(document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;scrollPercent = scrollTop / scrollBottom * 100 + "deg";
-        document.getElementById("upIcon").style.setProperty("--deg", scrollPercent);},{ passive: true });
+      var maxPos = document.getElementById("nav2").getBoundingClientRect().top - 47;
+
+      function scroll() {
+        base = "0deg";
+        h = window.innerHeight;
+        navPosTop = 1 - ((document.getElementById("nav2").getBoundingClientRect().top - 47) / maxPos);
+        scrollPercent = "-" + navPosTop * 180 + "deg";
+        if (navPosTop > 0) {
+          document.getElementById("upIcon").style.setProperty("--deg", scrollPercent);
+        } else {
+          document.getElementById("upIcon").style.setProperty("--deg", base);
+        }
+      }
+      
+      document.addEventListener("scroll", function() {
+        scroll(maxPos);
+      },{ passive: true });
+      
     </script>
 
   </body>
