@@ -13,67 +13,156 @@
   </head>
   
   <body>
-    <span id="theme-toggle" class="theme-toggle"></span>
-    <div class="container_full">
-
-     <!-- Nav Bar -->
-     <div class="nav_grid_container">
-      <div class="nav_first_item nav_item">
-        <div class="nav_clock_item">
-          <div class="nav_clock_item" id="nav_clock_world">
-              <a href="index.html"><i class="ri-global-line" style="font-size: 20px;"></i>
-              </a>
+    <!-- Main Nav Bar -->
+    <div class="navMain">
+      <div class="nav_grid_container">
+        <div class="nav_first_item nav_item">
+          <div class="nav_clock_item">
+            <div class="nav_clock_item" id="nav_clock_world">
+                <a href="index.html"><i class="ri-global-line" style="font-size: 20px;"></i>
+                </a>
+            </div>
+            <div id="nav_clock_date" class="nav_clock" onload="showDate()"></div>
+            <div id="nav_clock_time" onload="showTime()"></div> 
           </div>
-          <div id="nav_clock_date" class="nav_clock" onload="showDate()"></div>
-          <div id="nav_clock_time" onload="showTime()"></div> 
+
+          <div class="hamburger">
+            <i class="ri-menu-line"></i>
+          </div>
         </div>
 
-        <div class="hamburger">
-          <i class="ri-menu-line"></i>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="index.html">Home</a></div>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="index_list.html">Index</a></div>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="info.html">Info</a></div>
+
+        <div class="nav_last_item hamburgerItem nav_item">
+            <p class="languageSelector language_item_fr">FR</p>
+            <p class="language_item_l">|</p>
+            <p class="languageSelector language_item_en activeLanguage">EN</p>
         </div>
       </div>
+      <hr class="separator">
+    </div>
 
-      <div class="nav_item hamburgerItem nav_item bold"><a href="index.html">Home</a></div>
-      <div class="nav_item hamburgerItem nav_item bold"><a href="index_list.html">Index</a></div>
-      <div class="nav_item hamburgerItem nav_item bold"><a href="info.html">Info</a></div>
+    <!-- Cover -->
+    <div class="cover_container">
+      <div class="grid_header" id="top">
+        <div class="hero_img"></div>
 
-      <div class="nav_last_item hamburgerItem nav_item">
-          <p class="languageSelector language_item_fr">FR</p>
-          <p class="language_item_l">|</p>
-          <p class="languageSelector language_item_en activeLanguage">EN</p>
+        <div class="article_title_element">
+          <h1 class="article_title menu_title_item">Dinamo</h1>
+          <div class="article_info">
+            <p>Branding,</p>
+            <p>2022</p>
+          </div>
+        </div>
+
+        <div class="article_intro article_text">
+          <p><strong>Dinamo</strong> est un service de livraison autonome de pièces détachées associé à un atelier de réparation de vélos.<br>Le véhicule électrique est chargé de livrer les colis,<br>mais aussi de venir chercher les vélos en panne pour les conduire à l’atelier Dinamo afin qu'ils puissent y être réparés.</p>
+        </div>
       </div>
     </div>
-    <hr class="separator">
+
+    <!-- Secondary Nav Bar -->
+    <div class="navSecondary">
+      <div class="article_progress_bar_nav">
+        <div class="progressNavItem progressNavtitle"><a href="#top">Dinamo</a></div>
+        <div class="progressNavItem progessActive"><a href="#logo">Logo</a></div>
+        <div class="progressNavItem progessInactive"><a href="#typo">Typographie</a></div>
+        <div class="progressNavItem progessInactive"><a href="#color">Couleurs</a></div>
+        <div class="progressNavItem progessInactive"><a href="#assets">Assets</a></div>
+        <div class="progressNavItem progessInactive"><a href="#motion">Motion</a></div>
+        <div class="progressNavItem progessInactive"><a href="#campain">Campagne</a></div>
+        <div class="progressNavItem progessInactive"><a href="#pack">Packaging</a></div>
+  
+        <div class="progressNavItem progessInactive">
+          <a href="">Covering</a>
+        </div>
+  
+        
+        <a href="#top" class="progressNavItem_last">
+          <div class="backTotop">
+            <div>Back to top</div>
+            <div class="upIcon" id="upIcon"><i class="ri-arrow-up-line" style="font-size:20px;"></i></div>
+          </div>
+        </a>
+      
+      </div>
+  
+      <div id="article_progress_bar"></div>
+    </div>
+
+    <!-- Article -->
+    <div class="article_container">
+        <div class="grid_article">
+
+          <div class="article_img_1 article_img">
+            <img src="" alt="">
+          </div>
+
+          <div class="article_text_1 article_text">
+            <p>La dinamo, accessoire pour vélo générateur d’électricité de surcroit créateur d’autonomie était le mot parfait comme comme nom de marque pour un service de livraison et réparation autonome de cycle.<br> En effet, la dinamo, créée dans les années 1860, est un principe ancien de créer de l’énergie à partir d’un mouvement cyclique. Cette technologie ancienne revient grâce à la transition écologique sous différentes formes pour générer de l’énergie renouvelable.<br><br>Indépendante, fiable et verte. Dinamo est un service permettant le prolongement de vie d’un vélo. Soit en le réparant soit-même favorisant le transfert de connaissance, soit en le confiant à des réparateurs proches du circuit court. Ainsi ces valeurs et offres permettent de développer une entreprise dans son temps.</p>
+          </div>
+
+          <div class="article_text_2 article_text">
+            <p>Le logo est le résultat d’un jeu typographique avec le nom de la marque « dinamo ». Les lettres « a m o » se déplacent pour former un petit cycliste stylisé. La dernière jambe du m est transformée en petit point pour ajouter une tête. Le point du i est mis en vert pour créer un équilibre colorimétrique avec l’icône et le « d » est transformé en manivelle avec l’ajout d’une pédale à son extrémité. Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en couleurs qu'en noir & Blanc ainsi qu'en grande et petite taille.</p>
+          </div>
+
+          <div id="logo" style="grid-row: 3/3;"></div>
+
+          <div class="article_img_2 article_img">
+          </div>
+
+          <div class="article_img_3 article_img">
+          </div>
+
+          <div class="article_text_3 article_text">
+            <p>La typographie utilisée est
+              la Euclid Square              C’est en expérimentant avec différentes polices du la même apparence que le pictogramme du cycliste s’est formé.
+              Cette fonte est sans serif & hyper géométrique. Elle provient de la fonderie SwissTypeface et fait partie d’une famille de 5 variation autour de formes basiques.
+              
+              La police choisie pour accompagner est la euclid square. Le choix de la typo c’est fait avant la création du logo.
+              C’est en expérimentant avec différentes police que le pictogramme du cycliste s’est formé. Il fallait une font rationnelle, sans serif,hyper géométrique tout en gardant un caractère lisible et utilisable partout. Cette fonte provient de la fonderie <a href="https://www.swisstypefaces.com/fonts/euclid/">SwissTypeface</a> et fait partie d’une famille de 5 déclinaison autour d’un concept commun : des lettres géométriques. Les lettres rondes sont les roues du vélo comme le a et le o et les lettres linéaires comme le m ou le s s’apparentent à un tracé, une bande cyclable, un itinéraire de livraison. La typographie est parfaite le web avec un oeil faible et des caractères plutôt bien différenciés. Les glyphes étant très géométrique cela permet d’utiliser un corps de texte un peu plus petit que la normale et ainsi mieux répartir le texte sur la page.</p>
+          </div>
+
+          <div class="article_img_4 article_img">
+          </div>
+          
+          <div class="article_text_4 article_text">
+            <p></p>
+          </div>
+
+          <div class="article_img_5 article_img">
+          </div>
+
+          <div class="article_text_5 article_text">
+            <p></p>
+          </div>
+
+          <div class="article_text_6 article_text">
+            <p></p>
+          </div>
+          <div class="article_img_6 article_img">
+          </div>
+
+          <div class="article_img_7 article_img">
+          </div>
+
+          <div class="article_img_8 article_img">
+          </div>
+
+          <div class="article_text_7 article_text">
+          <p></div>
+
+        </div>
+    </div>
 
 
-      <!-- Article -->
+
       <div class="article_container">
         <div class="grid_article">
-            <div class="hero_img">
-            </div>
-
-            <div class="article_title_element">
-              <h1 class="article_title menu_title_item">Dinamo</h1>
-              <div class="article_info">
-                <p>Branding,</p>
-                <p>2022</p>
-              </div>
-            </div>
-            <div class="article_intro article_text">
-              <p><strong>Dinamo</strong> est un service de livraison autonome de pièces détachées associé à un atelier de réparation de vélos.<br>Le véhicule électrique est chargé de livrer les colis, mais aussi de venir chercher les vélos en panne pour les conduire à <strong>l’atelier Dinamo</strong> afin qu'ils puissent y être réparés.</p>
-            </div>
-
-            <div class="article_img_1 article_img">
-              <img src="" alt="">
-            </div>
-
-            <div class="article_text_1 article_text">
-              <p>Le logo est le résultat d’un jeu typographique avec le nom de la marque « dinamo ». Les lettres « a m o » se déplacent pour former un petit cycliste stylisé. La dernière jambe du m est transformée en petit point pour ajouter une tête. Le point du i est mis en vert pour créer un équilibre colorimétrique avec l’icône et le « d » est transformé en manivelle avec l’ajout d’une pédale à son extrémité.
-Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en couleurs qu'en noir & Blanc ainsi qu'en grande et petite taille.</p>
-            </div>
-
             <div class="article_text_2 article_text">
-              <p></p>
+              <p>Le logo est le résultat d’un jeu typographique avec le nom de la marque « dinamo ». Les lettres « a m o » se déplacent pour former un petit cycliste stylisé. La dernière jambe du m est transformée en petit point pour ajouter une tête. Le point du i est mis en vert pour créer un équilibre colorimétrique avec l’icône et le « d » est transformé en manivelle avec l’ajout d’une pédale à son extrémité. Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en couleurs qu'en noir & Blanc ainsi qu'en grande et petite taille.</p>
             </div>
 
             <div class="article_img_2 article_img">
@@ -82,8 +171,10 @@ Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en
             <div class="article_img_3 article_img">
             </div>
 
-            <div class="article_text_3 article_text">
-              <p></p>
+            <div class="article_text_3 article_text" style="columns: 3;">
+              <p>La typographie utilisée est la Euclid Square.<br><br>C’est en expérimentant avec différentes polices du la même apparence que le pictogramme du cycliste s’est formé.Cette fonte est sans serif & hyper géométrique. Elle provient de la fonderie <a href="https://www.swisstypefaces.com/fonts/euclid/">SwissTypeface</a> et fait partie d’une famille de 5 variation autour de formes basiques.</p>
+              <p>Les lettres rondes sont les roues du vélo comme le “a” et le “o” et les lettres linéaires comme le “m” ou le “s” s’apparentent à un tracé, une bande cyclable ou encore un itinéraire de livraison.</p>
+              <p>Cette fonte est parfaite le web avec un oeil faible et des caractères avec des détails différenciants. Les caractères étants géométrique, la composition du texte peut se faire avec un corps plus petit que la normale et ainsi mieux répartir le texte sur la page.</p>
             </div>
 
             <div class="article_img_4 article_img">
@@ -119,11 +210,12 @@ Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en
 
             <div class="background_xd">
             </div>
+            <!-- 
             <iframe width="100%" height="100%" class="article_xd" src="https://xd.adobe.com/embed/c0901e0e-da50-4d4e-9db4-0018841e3404-95c3/" frameborder="0" allowfullscreen></iframe>
 
             <div class="article_img_9">
                 <iframe src="https://player.vimeo.com/video/675449385?h=7c1301caa3" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="left:0;"></iframe>
-            </div>
+            </div>-->
 
 
             <!-- credits / infos-->
@@ -139,7 +231,8 @@ Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en
 
                 <div class="credit_element brief">
                   <p class="credit_element_legende">Brief</p>
-                  <p class="credit_element_input">Créer un concept et réaliser l’identité graphique d'un service de livraison autonome électrique</p>
+                  <p class="credit_element_input">Créer un concept et réaliser l’identité graphique d'un service de livraison autonome électrique ainsi qu'une campagne de communication grand publique. Concevoir les éléments de webdesign pour concevoir la commande du service.
+                  </p>
                 </div>
 
                 <div class="credit_element date">
@@ -171,9 +264,7 @@ Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en
 
   <div class="footer_container">
     <div class="col_1">
-      <svg class="monogram" alt="Monogramme Hugo Voisin"  version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-viewBox="0 0 346 121.2" style="enable-background:new 0 0 346 121.2;" xml:space="preserve">
-<g>
+      <svg class="monogram" alt="Monogramme Hugo Voisin"  version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 346 121.2" style="enable-background:new 0 0 346 121.2;" xml:space="preserve"><g>
 <rect x="0" y="0" width="15" height="116"/>
 <polygon points="25,49.2 25,116 40,116 40,64.2 59.9,64.2 99.5,116 118.4,116 67.3,49.2 	"/>
 <polygon points="189.3,96.2 189.3,30.1 174.3,30.1 174.3,81.2 154.7,81.2 115.6,30.1 96.7,30.1 147.3,96.2 	"/>
@@ -285,20 +376,21 @@ C290.6,81.5,290.3,80.3,290.2,78.9z"/>
     showDate();
     </script>
 
-    <script type="text/javascript">
-    function toggleTheme() {
-      const htmlTag = document.getElementsByTagName('html')[0]
-      if (htmlTag.hasAttribute('data-theme')) {
-        htmlTag.removeAttribute('data-theme')
-        return
-      }
-
-      htmlTag.setAttribute('data-theme', 'dark')
-    }
-
-    document
-      .getElementById('theme-toggle')
-      .addEventListener('click', toggleTheme)
+    <script>
+      document.addEventListener("scroll",
+      function() {
+        var scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
+        var scrollBottom =(document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;scrollPercent = scrollTop / scrollBottom * 100 + "%";
+        document.getElementById("article_progress_bar").style.setProperty("--scroll", scrollPercent);},{ passive: true });
     </script>
+
+    <script>
+      document.addEventListener("scroll",
+      function() {
+        var scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
+        var scrollBottom =(document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;scrollPercent = scrollTop / scrollBottom * 100 + "deg";
+        document.getElementById("upIcon").style.setProperty("--deg", scrollPercent);},{ passive: true });
+    </script>
+
   </body>
 </html>

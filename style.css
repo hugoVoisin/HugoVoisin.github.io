@@ -20,6 +20,7 @@
   --global-theme-toggle-content: '🌞 DAY';
   --column_gap: 1.667vw;
   --gap-row: 12px;
+  scroll-behavior: smooth; 
 }
 
 /* dark theme*/
@@ -57,7 +58,7 @@ p{
 
 
 .container_full {
-  margin: 0 12px 0 12px;
+  margin: 0 12px 10px 12px;
   display: flex;
   flex-direction: column;
 }
@@ -71,6 +72,28 @@ p{
   margin: 10px 0 10px 0;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 1;
+  column-gap: var(--column_gap);
+}
+
+.navMain{
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 12px 0 12px;
+  margin-bottom: 10px;
+}
+
+.navSecondary{
+  right: 0;
+  left: 0;
+  top: 47px;
+  position: sticky;
+  position: -webkit-sticky;
+  background: white;
+  padding: 0 12px 0 12px;
 }
 
 .nav_item {
@@ -282,6 +305,7 @@ border: 1px solid var(--text-color);
 
 #nav_clock_world{
   width: 19.5px;
+  height: 24px;
   padding: 1px 3px 0 1px;
 }
 
@@ -296,7 +320,12 @@ border: 1px solid var(--text-color);
 .article_container {
   flex: auto;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 56px;
+  margin: 10px 12px 10px 12px;
+}
+
+.cover_container {
+  margin: 56px 12px 10px 12px;
 }
 
 .article_title_element{
