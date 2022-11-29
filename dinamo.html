@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./css/dinamo.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   
   <body id="top">
     <!-- Main Nav Bar -->
-    <div class="navMain">
+    <nav style="z-index: 1;">
       <div class="nav_grid_container">
         <div class="nav_first_item nav_item">
           <div class="nav_clock_item">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <hr class="separator">
-    </div>
+    </nav>
 
     <!-- Cover -->
     <div class="cover_container">
@@ -64,7 +64,7 @@
     </div>
 
     <!-- Secondary Nav Bar -->
-    <div class="navSecondary" id="nav2">
+    <div class="navSecondary" id="nav2" style="z-index: 1;">
       <div class="article_progress_bar_nav">
         <div class="progressNavItem progressNavtitle"><a href="#top">Dinamo</a></div>
         <div class="progressNavItem progessActive"><a href="#logo">Logo</a></div>
@@ -74,12 +74,8 @@
         <div class="progressNavItem progessInactive"><a href="#motion">Motion</a></div>
         <div class="progressNavItem progessInactive"><a href="#campain">Campagne</a></div>
         <div class="progressNavItem progessInactive"><a href="#pack">Packaging</a></div>
-  
-        <div class="progressNavItem progessInactive">
-          <a href="">Covering</a>
-        </div>
-  
-        
+        <div class="progressNavItem progessInactive"><a href="">Covering</a></div>
+
         <a href="#top" class="progressNavItem_last">
           <div class="backTotop">
             <div id="labelTop" style="display: none;">Back to top</div>
@@ -87,9 +83,7 @@
             <div class="upIcon" id="upIcon"><i class="ri-arrow-down-line" style="font-size:20px; line-height: 1.2;"></i></div>
           </div>
         </a>
-      
       </div>
-  
       <div id="article_progress_bar"></div>
     </div>
 
@@ -105,6 +99,7 @@
             <p>La dinamo, accessoire pour vélo générateur d’électricité de surcroit créateur d’autonomie était le mot parfait comme comme nom de marque pour un service de livraison et réparation autonome de cycle.<br> En effet, la dinamo, créée dans les années 1860, est un principe ancien de créer de l’énergie à partir d’un mouvement cyclique. Cette technologie ancienne revient grâce à la transition écologique sous différentes formes pour générer de l’énergie renouvelable.<br><br>Indépendante, fiable et verte. Dinamo est un service permettant le prolongement de vie d’un vélo. Soit en le réparant soit-même favorisant le transfert de connaissance, soit en le confiant à des réparateurs proches du circuit court. Ainsi ces valeurs et offres permettent de développer une entreprise dans son temps.</p>
           </div>
 
+<!-- Logo -->
           <div class="article_text_2 article_text">
             <p>Le logo est le résultat d’un jeu typographique avec le nom de la marque « dinamo ». Les lettres « a m o » se déplacent pour former un petit cycliste stylisé. La dernière jambe du m est transformée en petit point pour ajouter une tête. Le point du i est mis en vert pour créer un équilibre colorimétrique avec l’icône et le « d » est transformé en manivelle avec l’ajout d’une pédale à son extrémité. Ce logo est ultraminimaliste, utilisable dans toute les situations aussi bien en couleurs qu'en noir & Blanc ainsi qu'en grande et petite taille.</p>
           </div>
@@ -114,9 +109,10 @@
           <div class="article_img_2 article_img">
           </div>
 
+<!-- Typo -->
           <div id="typo" style="grid-row: 6/6; top: 47px; height: 10%; align-self: flex-end;"></div>
 
-          <div class="article_img_3 article_img">
+          <div class="article_img_3">
           </div>
 
           <div class="article_text_3 article_text">
@@ -133,17 +129,17 @@
           <div class="colorSwatch" style="background: #E4EC13; grid-column: 3/7; grid-row: 11/12;">#E4EC13</div>
           <div class="article_text" style="grid-column: 7/9; grid-row: 11/12;">Deux couleurs se dégagent de l’univers visuel du vélo, l’orange et le jaune fluo. Couleurs ultra visible porté en gilet de haute visibilité, en catadioptre ou encore sur des outils de réparations.</div>
 
-          <div class="colorSwatch" style="background: #F04212; grid-column: 5/9; grid-row: 12/13;">#F04212</div>
+          <div class="colorSwatch" style="background: #F04212; grid-column: 5/9; grid-row: 12/13; color: white;">#F04212</div>
           <div class="colorSwatch" style="background: #FBC6B8; grid-column: 9/10; grid-row: 12/13;">#FBC6B8</div>
           <div class="colorSwatch" style="background: #FDE2DB; grid-column: 10/11; grid-row: 12/13;">#FDE2DB</div>
           
           <div class="colorSwatch" style="background: #3BA8A8; grid-column: 1/2; grid-row: 13/14;">#3BA8A8</div>
           <div class="colorSwatch" style="background: #C4E5E5; grid-column: 2/3; grid-row: 13/14;">#C4E5E5</div>
           <div class="colorSwatch" style="background: #E1F2F2; grid-column: 3/4; grid-row: 13/14;">#E1F2F2</div>
-          <div class="colorSwatch" style="background: #525466; grid-column: 4/5; grid-row: 13/14;">#525466</div>
+          <div class="colorSwatch" style="background: #525466; grid-column: 4/5; grid-row: 13/14; color: white;">#525466</div>
           <div class="colorSwatch" style="background: #CBCCD1; grid-column: 5/6; grid-row: 13/14;">#CBCCD1</div>
           <div class="colorSwatch" style="background: #E5E5E8; grid-column: 6/7; grid-row: 13/14;">#E5E5E8</div>
-          <div class="colorSwatch" style="background: #1F1826; grid-column: 8/9; grid-row: 13/14;">#1F1826</div>
+          <div class="colorSwatch" style="background: #1F1826; grid-column: 8/9; grid-row: 13/14; color: white;">#1F1826</div>
           <div class="colorSwatch" style="background: #BCBABE; grid-column: 9/10; grid-row: 13/14;">#BCBABE</div>
           <div class="colorSwatch" style="background: #DDDCDE; grid-column: 10/11; grid-row: 13/14;">#DDDCDE</div>
 
@@ -154,36 +150,35 @@
           <div class="article_text" style="grid-column: 3/5; grid-row: 15/15;">Des éléments visuels 3D ont été crées pour accompagner le logo dans le déploiement de la charte graphique. On retrouve les couleurs primaires mais aussi l’ambiance graphique du logo, avec des modèles 3D composé de primitives comme des tubes ou des carrés aux bords biseautés pour arrondi au maximun leurs arrêtes.<br>On PEUT TROUVER ces modèles sur tout les élèments de comunication de dinamo, de l’affiche aux posts pour les réseaux sociaux en passant par le site web.Il est très facile de venir créer de nouveaux items pour constituer une banque de modèles 3D répondant à toutes les situations possibles.
           </div>
 
-          <div class="article_img article_img" style="grid-column: 5/7; grid-row: 15/17;">
+          <div class="article_img article_img" style="grid-column: 5/7; grid-row: 15/17; background-image: url(/img/dinamo/asset_1.png); background-size: cover; background-position: center;">
           </div>
 
-          <div class="article_img article_img" style="grid-column: 8/11; grid-row: 17/19;">
+          <div class="article_img article_img" style="grid-column: 8/11; grid-row: 17/19; background-image: url(/img/dinamo/asset_2.png); background-size: cover; background-position: center;">
           </div>
 
-          <div class="article_img article_img" style="grid-column: 2/6; grid-row: 18/20;">
+          <div class="article_img article_img" style="grid-column: 2/6; grid-row: 18/20; background-image: url(/img/dinamo/asset_4.png); background-size: cover; background-position: center;">
+          </div>
+
+          <div class="article_text" style="grid-column: 6/8; grid-row: 18/19;">
+            <p>On PEUT TROUVER ces modèles sur tout les élèments de comunication de dinamo, de l’affiche aux posts pour les réseaux sociaux en passant par le site web.<br>Il est très facile de venir créer de nouveaux items pour constituer une banque de modèles 3D répondant à toutes les situations possibles.</p>
+          </div>
+
+          <div class="article_img article_img" style="grid-column: 7/9; grid-row: 19/21; background-image: url(/img/dinamo/asset_3.png); background-size: cover; background-position: center;">
           </div>
 
           <div id="motion" style="grid-row: 10/10; top: 47px; height: 10%; align-self: center;"></div>
 
-          <div class="article_text" style="grid-column: 6/8; grid-row: 18/19;">
+          <div class="article_text" style="grid-column: 2/3; grid-row: 22/23;">Motion design
           </div>
 
-          <div class="article_img article_img" style="grid-column: 7/9; grid-row: 19/21;">
+          <div class="" style="grid-column: 3/9; grid-row: 22/24;">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/675449385?h=7c1301caa3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:calc(24vw + 1.667vw);" title="#SchoolWorks &amp;mdash;Dinamo"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </div>
 
-          <div class="article_text" style="grid-column: 2/3; grid-row: 22/23;">On PEUT TROUVER ces modèles sur tout les élèments de comunication de dinamo, de l’affiche aux posts pour les réseaux sociaux en passant par le site web.Il est très facile de venir créer de nouveaux items pour constituer une banque de modèles 3D répondant à toutes les situations possibles.
+          <div class="article_img article_img" style="grid-column: 1/7; grid-row: 25/28; background-image: url(/img/dinamo/dinamo_campagne_1.png); background-size: 80%; background-position: center; background-repeat: no-repeat;">
           </div>
 
-          <div class="article_img article_img" style="grid-column: 3/9; grid-row: 22/24;">
-          </div>
-
-          <div class="article_img article_img" style="grid-column: 3/9; grid-row: 22/24;">
-          </div>
-
-          <div class="article_img article_img" style="grid-column: 1/7; grid-row: 25/28;">
-          </div>
-
-          <div class="article_img article_img" style="grid-column: 8/11; grid-row: 25/28;">
+          <div class="article_img article_img" style="grid-column: 8/11; grid-row: 25/28;  background-image: url(/img/dinamo/dinamo_campagne_2.png); background-size: 80%; background-position: center; background-repeat: no-repeat;">
           </div>
 
           <div class="article_img article_img" style="grid-column: 2/8; grid-row: 29/32;">

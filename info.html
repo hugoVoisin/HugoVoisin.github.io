@@ -11,39 +11,41 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="./js/sparkles.js"></script>
   </head>
+
   <body>
+    <!-- Main Nav Bar -->
+    <nav style="z-index: 1;">
+      <div class="nav_grid_container">
+        <div class="nav_first_item nav_item">
+          <div class="nav_clock_item">
+            <div class="nav_clock_item" id="nav_clock_world">
+                <a href="index.html"><i class="ri-global-line" style="font-size: 20px;"></i>
+                </a>
+            </div>
+            <div id="nav_clock_date" class="nav_clock" onload="showDate()"></div>
+            <div id="nav_clock_time" onload="showTime()"></div> 
+          </div>
+
+          <div class="hamburger">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+
+        <div class="nav_item hamburgerItem nav_item bold"><a href="index.html">Home</a></div>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="index_list.html">Index</a></div>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="info.html">Info</a></div>
+
+        <div class="nav_last_item hamburgerItem nav_item">
+            <p class="languageSelector language_item_fr">FR</p>
+            <p class="language_item_l">|</p>
+            <p class="languageSelector language_item_en activeLanguage">EN</p>
+        </div>
+      </div>
+      <hr class="separator">
+    </nav>
+
     <span id="theme-toggle" class="theme-toggle"></span>
     <div class="container_full">
-
-      <!-- Nav Bar -->
-      <div class="nav_grid_container">
-       <div class="nav_first_item nav_item">
-        <div class="nav_clock_item">
-          <div class="nav_clock_item" id="nav_clock_world">
-          <a href="index.html"><i class="ri-global-line" style="font-size: 20px;"></i>
-          </a>
-      </div>
-      <div id="nav_clock_date" class="nav_clock" onload="showDate()"></div>
-      <div id="nav_clock_time" onload="showTime()"></div> 
-    </div>
-
-    <div class="hamburger">
-      <i class="ri-menu-line"></i>
-    </div>
-  </div>
-
-  <div class="nav_item hamburgerItem nav_item bold"><a href="index.html">Home</a></div>
-  <div class="nav_item hamburgerItem nav_item bold"><a href="index_list.html">Index</a></div>
-  <div class="nav_item hamburgerItem nav_item bold"><a href="info.html">Info</a></div>
-
-  <div class="nav_last_item hamburgerItem nav_item">
-      <p class="languageSelector language_item_fr">FR</p>
-      <p class="language_item_l">|</p>
-      <p class="languageSelector language_item_en activeLanguage">EN</p>
-  </div>
-</div>
-
-<hr class="separator">
 
       <!-- Menu -->
       <div class="menu_container">
