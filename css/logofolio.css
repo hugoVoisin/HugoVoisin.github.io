@@ -21,6 +21,11 @@
   transition: ease 0.2s;
 }
 
+.logofolio_logo:hover {
+  scale: 1.5;
+  transition: ease 0.25s;
+}
+
 .article_container svg{
   width: 100%;
 }
@@ -152,3 +157,4 @@ transition: ease 0.2s;
 .logofolio_logo:hover #dinamo_v{
   fill: #ced500;
 }
+
