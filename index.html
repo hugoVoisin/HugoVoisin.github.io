@@ -12,13 +12,13 @@
   </head>
 
   <body>
-
     <nav style="z-index: 1;">
       <div class="nav_grid_container">
         <div class="nav_first_item nav_item">
           <div class="nav_clock_item">
-            <div class="nav_clock_item" id="nav_clock_world">
-                <a href="index.html"><i class="ri-global-line" style="font-size: 20px;"></i>
+            <div id="nav_clock_world">
+                <a href="index.html">
+                  <i class="ri-global-line"></i>
                 </a>
             </div>
             <div id="nav_clock_date" class="nav_clock" onload="showDate()"></div>
@@ -88,7 +88,7 @@
             <a href="./vox_atypi.html" class="menu_element el_4">
               <div class="menu_img">
               </div>
-              <h1 class="menu_title_item">Vox—<br>Atypi</h1>
+              <h1 class="menu_title_item">Vox–<br>Atypi</h1>
               <div class="menu_info menu_flex_item">
               <p>Print,</p>
               <p>2020</p>
@@ -230,7 +230,7 @@
           -->
         </div>
       </div>
-    </footer>
+    </footer>  
 
     <script type="text/javascript">
       function showTime(){
@@ -276,7 +276,6 @@
     <script type="text/javascript">
       const hamburger = document.querySelector(".hamburger")
       const hamburgerItem = document.querySelectorAll(".hamburgerItem")
-      console.log(hamburgerItem)
 
       hamburger.addEventListener("click", () => {
         Array.from( hamburgerItem ).forEach(function(hamburgerItem){
