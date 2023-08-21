@@ -1,44 +1,422 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+html.lenis{height:100%}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS Start here*/
+
 html {
   font-family: 'Inter', sans-serif;
-  font-weight: normal;
-  box-sizing: border-box;
-  /* transition: 3s ease, color 1s ease; */
+  width: 100%;
+  height: 100%;
 }
 
-body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer {
+h1{
+  font-family: PP Editorial New,'Times New Roman', Times, serif;
+  font-size: 8rem;
+  line-height: 100%;
+  font-weight:100;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h1 > span{
+  font-style: italic;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  color: inherit;
+  height: 100%;
+  background-color: hsla(60, 6%, 68%, 1);
+  display: grid;
+  width: auto;
+  overflow: hidden;
 }
 
-html{
-  height: 100%;
-}
-
-body{
-  padding: 0 1em 0 1em;
-  height: 100%;
+main{
+  background: hsla(54, 7%, 74%, 1);
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  box-sizing: content-box;
+  position: relative;
+  width: calc(100%-2rem);
+  box-sizing: border-box;
+}
+
+#info{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(8,1fr);
+  grid-gap: 1rem;
+  flex: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.infoText > a {
+  color: black;
+  position: relative;
+  text-decoration: none;
+  background-position: top ;
+  background: 
+    linear-gradient(90deg, currentColor calc(100%/3), transparent 0 calc(200%/3), currentColor 0) var(--d, 0%) 100% /300% 0.1rem no-repeat;
+}
+
+.infoText > a:hover {
+  --d: 100%;
+  transition: 0.5s
+}
+
+.col_1{
+  grid-column: 1 / span 8;
+  grid-row: 1 / 3;
+  margin: 1rem 0 0 1rem;
+}
+
+.col_2{
+  grid-column: 9 / span 2;
+  grid-row: 1 / 3;
+  margin: 1rem 0 0 0;
+}
+
+.col_3{
+  grid-column: 11 / span 2;
+  grid-row: 1 / 3;
+  margin: 1rem 1rem 0 0 ;
+}
+
+.infoText{
+  grid-column: 1 / span 5;
+  grid-row: 3 / 8;
+  font-family: 'PP Editorial New';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #141414;
+  margin: 0 0 0 1rem;
+
+}
+
+.infoPortrait{
+border-radius: 16px;
+grid-column: 6 / span 3;
+grid-row: 3 / span 5;
+background-image: url(img/hugo.webp);
+background-size: cover;
 }
 
 nav{
-  padding: 0.5em 0 0.5em 0;
-  border-bottom: 0.1em solid grey;
+  height: 3.5rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.nav{
+.navClock{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.125rem 1rem 1rem;
+  background: #3E3B37;
+  border: 1px solid #6C6760;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
-.item_nav{
-  width: 20%;
+.navClock>:first-child{
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.navClock>p>:last-child{
+  font-style: italic;
+  font-weight: 200;
+}
+
+.navNav{
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  background: rgba(224, 224, 224, 0.4);
+  border: 1px solid #B2B2A9;
+  border-radius: 16px;
+  height: 100%;
+}
+
+.navOption{
+  display: flex;
+}
+
+.navOption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #E57B03;
+  border: 1px solid #C96C03;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  width: calc(3.5rem - 2px);
+}
+
+.navOption:hover{
+  background-color: hsla(32, 97%, 40%, 1);
+}
+
+.slide{
+  background-color: #CECDC8;
+  border-radius: 1rem;
+  width: calc(100% - 2rem);
+  height: 100%;
+  z-index: 2;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+#scroll-horizontal{
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow: auto;
+  scroll-behavior: smooth; 
+  position: absolute;
+  height: calc(100% - 20rem);
+  width: calc(100% - 2rem);
+  border-radius: 1rem;
+  gap: 1rem;
+  margin: 0 0 5.5rem 0;
+  bottom: 0;
+  scrollbar-color: #3E3B37;
+  scrollbar-width: 2rem;
+  scroll-snap-type: x mandatory;
+}
+
+#info_1{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(8,1fr);
+  grid-gap: 1rem;
+  flex: auto;
+  position: relative;
+  z-index: 2;
+}
+
+#project{
+  width: 76.250rem; 
+  z-index: 0;
+  opacity: 0;
+}
+
+.navNav > a {
+  color: black;
+}
+
+.nav_item {
+  display: flex; flex: auto;
+  align-items:center;
+  margin: 0.5rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.nav_item:hover{
+  background-color: #B2B2A9;
+  border-radius: 0.5rem;
+
+}
+
+#project_2{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(3,1fr);
+  height: calc(100% - 2rem);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.rowProject{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.titleProject{
+  height: 100%;
+  display: flex;
+}
+
+.menuImg{
+  background-color: #FFF;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+.menuImg_1{
+  background-image: url(./img/jaguar_cover.png);
+  width: calc((100% - 5rem) / 6);
+  background-size: 26rem;
+  background-position: 85%;
+  transition: 0.5s ease-in;
+}
+
+.menuImg_1:hover{
+  width: calc((100% - 5rem) / 2);
+  background-position: center;
+}
+
+.menuImg_2{
+  background-image: url(./img/poster_typo_cover.webp);
+  width: calc((100% - 4rem) / 5);
+  background-size: 20rem;
+  background-position: center;
+  transition: 0.5s ease-in;
+}
+
+.menuImg_2:hover{
+  width: calc((100% - 5rem) / 2);
+}
+
+.menuImg_3{
+  background-image: url(./img/captarget_cover.webp);
+  width: calc((100% - 5rem) / 6);
+  background-size: 26rem;
+  background-position: 45%;
+  transition: 0.5s ease-in;
+}
+
+.menuImg_3:hover{
+  width: calc((100% - 5rem) / 2);
+}
+
+.menuImg_4{
+  background-image: url(./img/era_cover.png);
+  width: calc((100% - 3rem) / 4);
+  background-size: 26rem;
+  background-position: 45%;
+  transition: 0.5s ease-in;
+}
+
+.menuImg_4:hover{
+  width: calc(70%);
+}
+
+.menuImg_5{
+  background-image: url(./img/era_cover.png);
+  width: calc((100% - 4rem) / 5);
+  background-size: 26rem;
+  background-position: 45%;
+  transition: 0.5s ease-in;
+}
+
+.menuImg_5:hover{
+  width: calc(70%);
+}
+
+.menuImg_6{
+  background-image: url(./img/era_cover.png);
+  width: calc((100% - 4rem) / 5);
+  background-size: 26rem;
+  background-position: 45%;
+  transition: 0.5s ease-in;
+}
+
+.menuImg_6:hover{
+  width: calc(70%);
+}
+
+
+.titleProject > h1 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 5rem;
+  margin-right: 0.5vw;
+  font-weight: 300;
+  line-height: 5.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.projet_1{
+  grid-column: 1/7;
+}
+
+.projet_2{
+  grid-column: 8/13;
+}
+
+.spacer_20{
+  grid-column: 1/2;
+}
+
+.projet_3{
+  grid-column: 3/9;
+}
+
+.projet_4{
+  grid-column: 9/13;
+}
+
+.projet_5{
+  grid-column: 2/7;
+}
+
+.projet_6{
+  grid-column: 7/12;
 }

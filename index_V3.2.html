@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hugo Voisin</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style_V3.2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <div id="info_1">
+        <div class="col_1">
+        </div>
+
+        <div class="col_2">
+        </div>
+
+        <div class="col_3 contact">
+        </div>
+      </div>
+    
+      <div id="scroll-horizontal">
+        <div id="project" >
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+    
+        <div id="project_2" class="project">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+
+        <div id="project_3" class="project">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+
+    <nav>
+      <div class="navClock">
+          <i class="ri-global-line"></i>
+          <p>
+            <span id="nav_clock_date" onload="showDate()"></span>
+            <span id="nav_clock_time" onload="showTime()"></span>
+          </p>
+      </div>
+
+      <div class="navNav">
+        <div class="nav_item hamburgerItem nav_item bold"><a href="#project">Home</a></div>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="#project_2">Index</a></div>
+        <div class="nav_item hamburgerItem nav_item bold"><a href="#project_3">Info</a></div>
+      </div>
+
+      <div class="navOption">
+        <i class="ri-haze-fill"></i>
+      </div>
+    </nav>
+
+
+  </main>
+<!-- 
+    <main class="main">
+      <h1 class="title">Basic Usage</h1>
+      <div class="wrapper">
+        <div class="box" data-scroll data-scroll-speed="-0.2"></div>
+        <div class="box" data-scroll data-scroll-speed="0.3"></div>
+      </div>
+      <div style="height: 100vh;"></div>
+    </main>
+-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    </script>
+
+    <script type="text/javascript">
+      function showTime(){
+      var date = new Date();
+      var h = date.getHours(); // 0 - 23
+      var m = date.getMinutes(); // 0 - 59
+      var s = date.getSeconds(); // 0 - 5
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+      
+      var time =  " — " + h + ":" + m  ;
+      document.getElementById("nav_clock_time").innerText = time;
+      document.getElementById("nav_clock_time").textContent = time;
+      
+      setTimeout(showTime, 1000);
+      
+    }
+
+    showTime();
+
+    function showDate(){
+      var date = new Date();
+      var y = date.getFullYear(); // 2022 - XXXX
+      var mth = date.getMonth(); // 1 - 12
+      var d = date.getDay(); // 1 - 31
+
+      mth = (mth < 10) ? "0" + mth : mth;
+      d = (d < 10) ? "0" + d : d;
+      
+      var time = y + "." + d + "." + mth;
+      document.getElementById("nav_clock_date").innerText = time;
+      document.getElementById("nav_clock_date").textContent = time;
+      
+      setTimeout(showDate, 1000);
+      
+    }
+
+    showDate();
+    </script>
+
+  </body>
+</html>
