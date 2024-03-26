@@ -1,0 +1,444 @@
+body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: unset;
+    line-height: 1.5;
+  }
+
+/* variable */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --color-hover: #ff0000;
+    --placeholder: #e1e1e1;
+    --global-theme-toggle-content: '🌞 DAY';
+    scroll-behavior: smooth; 
+    --gap: 2rem;
+  }
+  
+  /* dark theme*/
+  html[data-theme='dark'] {
+    --background-color: #000;
+    --text-color: #fff;
+    --color-hover: #ff0000;
+    --placeholder: #333333;
+    --global-theme-toggle-content: '🌝 NIGHT';
+  }
+  
+  /* css */
+  html {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background: var(--background-color);
+    font-size: 16px;
+    /* transition: 3s ease, color 1s ease; */
+  }
+
+body{
+    display: flex;
+    width: 100dvw;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gridColumns{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: var(--gap);
+}
+
+header{
+    color: #221D1D;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 10.8px */
+    text-transform: uppercase;
+    width: max-content;
+    width: 100dvw;
+    padding: 2.5rem 0 2.5rem ;
+}
+
+.containerNav{
+    grid-column: 2 / span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+h1{
+    color: #221D1D;
+    font-family: Inter;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 115.2px */
+    text-transform: uppercase;
+}
+
+h1 > span{
+    color: #221D1D;
+    font-family: "PP Editorial New";
+    font-style: italic;
+}
+
+h2{
+    color: #221D1D;
+    font-family: Inter;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92%; /* 5.52rem */
+    text-transform: uppercase;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+#container{
+    width: 100%;
+}
+
+#hero{
+    gap: 32px;
+    padding: 11.25rem 0 11.25rem;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+#heroTitle{
+    grid-column: 2 / span 6;
+    grid-row: 1 / span 3;
+    z-index: 1;
+}
+
+.heroImg{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#heroImgS{
+    grid-column: 4 / span 4;
+    grid-row: 4 / span 5;
+}
+
+#heroImgL{
+    grid-column: 8 / span 6;
+    grid-row: 1 / span 6;
+}
+
+#imgS{
+    flex: auto;
+    background-image: url(img/dinamo_cover.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgL{
+    flex: auto;
+    background-image: url(img/jaguar_cover.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.heroImgText{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: #221D1D;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    text-transform: uppercase
+    ;
+}
+
+.heroImgLegende{
+    display: flex;
+    gap: 10px;
+}
+
+.heroImgText > a:hover{
+    color: #ff0000;
+}
+
+#ideas{
+    grid-template-areas: ". . text text text . list list list list list list . .";
+    padding: 11.25rem 0 11.25rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.textBloc{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.CTA{
+    padding: 0.875rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 3.125rem;
+    background: #221D1D;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 0.8625rem */
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.CTA:hover{
+    background-color: white;
+    color: black;
+    -webkit-box-shadow:inset 0px 0px 0px 1.2px #222;
+    -moz-box-shadow:inset 0px 0px 0px 1.2px #222;
+    box-shadow:inset 0px 0px 0px 1.2px #222;
+}
+
+.ideasList{
+    display: flex;
+    grid-area: list;
+    gap: 2rem;
+}
+
+.ideasList > ul {
+    flex: auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ideasList > ul > li {
+    flex: auto;
+}
+
+.ideasList ul > li > p > span {
+    color: #221D1D;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92%; /* 2.76rem */
+}
+
+#selectedWorks{
+    padding: 11.25rem 0 11.25rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.worksText{
+    display: flex;
+    flex: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-column: 2 / span 11;
+}
+
+.workList{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    grid-column: 3 / span 10;
+}
+
+.oblong{
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+
+    font-size: 0.75rem;
+    line-height: 1;
+    border-radius: 4rem;
+    border: 1px solid #221D1D;
+    text-transform: uppercase;
+    }
+
+.workItem{
+    display: flex;
+    flex: auto;
+    width: 10px;
+    gap: 1.25rem;
+    flex-direction: column;
+}
+
+.workItemImg {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    background-position: center;
+}
+
+#workItem2{
+    flex: auto;
+    background-image: url(img/dinamo_cover.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#workItem1{
+    flex: auto;
+    background-image: url(img/jaguar_cover.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.otherWork{
+    text-decoration: none;
+    grid-column: 3 / span 10;
+}
+
+.otherWork > li {
+    display: flex;
+    padding: 1.875rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+
+    border-top: 1px solid #000;
+}
+
+.otherWork > li > h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 1.8rem */
+}
+
+.otherWork > li > p {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 1.8rem */
+}
+
+#aboutMe{
+    padding: 11.25rem 0 11.25rem;
+}
+
+#imgAboutMe{
+    background: url(img/hugo.webp);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / span 4;
+    height: auto;
+    width: 100%;
+}
+
+.aboutMeText{
+    grid-column: 7 / span 4;
+    grid-row: 1;
+    display: flex;
+    gap:var(--gap);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imgAboutMe{
+    background: url(img/hugo.webp);
+    background-size: cover;
+    background-position: bottom;
+    grid-column: 3 / span 4;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: 100%;
+}
+
+footer{
+    width: 100%
+}
+
+.CTABig{
+    border-radius: 360rem;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-family: Inter;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 7.2rem */
+    grid-column: 2 / span 12;
+    padding: 4rem 6rem;
+    text-transform: uppercase;
+}
+
+.footerCredit{
+    grid-column: 2 / span 12;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.footerCredit > p {
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 110%; 
+    width: 100%;
+    border-bottom: solid 1px black;
+    padding: 1.2rem 0;
+}
+
+.footerCredit > p > span {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footerCredit > div {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 0.825rem */
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+}
+
+#nav_clock_date{
+    font-weight: 700;
+}
