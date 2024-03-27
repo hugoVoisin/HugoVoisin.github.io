@@ -11,7 +11,7 @@ body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer {
 /* variable */
 :root {
     --background-color: #fff;
-    --text-color: #000;
+    --text-color: #221D1D;
     --color-hover: #ff0000;
     --placeholder: #e1e1e1;
     --global-theme-toggle-content: '🌞 DAY';
@@ -79,7 +79,7 @@ nav {
 }
 
 h1{
-    color: #221D1D;
+    color: var(--text-color);
     font-family: Inter;
     font-size: 8rem;
     font-style: normal;
@@ -88,8 +88,8 @@ h1{
     text-transform: uppercase;
 }
 
-h1 > span{
-    color: #221D1D;
+h1 > span > span > span{
+    color: var(--text-color);
     font-family: "PP Editorial New";
     font-style: italic;
 }
@@ -111,13 +111,17 @@ h2{
     font-weight: 700;
 }
 
-#container{
+.container{
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero{
+    width: 100%;
     gap: 32px;
-    padding: 11.25rem 0 11.25rem;
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -133,11 +137,12 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 #heroImgS{
     grid-column: 4 / span 4;
-    grid-row: 4 / span 5;
+    grid-row: 3 / span 5;
 }
 
 #heroImgL{
@@ -252,11 +257,6 @@ h2{
     padding: 11.25rem 0 11.25rem;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-}
-
 .worksText{
     display: flex;
     flex: auto;
@@ -270,6 +270,7 @@ h2{
     flex-direction: row;
     gap: 2rem;
     grid-column: 3 / span 10;
+    padding-bottom: 5.625rem;
 }
 
 .oblong{
@@ -317,6 +318,7 @@ h2{
 .otherWork{
     text-decoration: none;
     grid-column: 3 / span 10;
+
 }
 
 .otherWork > li {
@@ -327,10 +329,15 @@ h2{
     align-self: stretch;
 
     border-top: 1px solid #000;
+
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, black 50%);
+    -webkit-transition: background-position 0.5s ease-in-out;
+    -moz-transition: background-position 0.5s ease-in-out;
+    transition: background-position 0.5s ease-in-out;
 }
 
 .otherWork > li > h3 {
-    color: #000;
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -339,7 +346,6 @@ h2{
 }
 
 .otherWork > li > p {
-    color: #000;
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -380,13 +386,15 @@ h2{
 }
 
 footer{
-    width: 100%
+    width: 100%;
+    padding-top: 11.25rem;
 }
 
 .CTABig{
     border-radius: 360rem;
     border: solid 1px black;
     display: flex;
+    color: black;
     justify-content: space-between;
     color: #000;
     font-family: Inter;
@@ -397,6 +405,17 @@ footer{
     grid-column: 2 / span 12;
     padding: 4rem 6rem;
     text-transform: uppercase;
+
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50%, black 50%);
+    -webkit-transition: background-position 0.25s ease-in-out;
+    -moz-transition: background-position 0.25s ease-in-out;
+    transition: background-position 0.25s ease-in-out;
+}
+
+.CTABig:hover{
+    background-position: -100% 0;
+    color: white;
 }
 
 .footerCredit{
@@ -441,4 +460,116 @@ footer{
 
 #nav_clock_date{
     font-weight: 700;
+}
+
+
+@media (max-width: 576px) {
+
+.gridColumns{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 1rem;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+#ideas{
+    display: flex!important;
+    flex-direction: column;
+}
+}
+
+.otherWork > li:hover {
+    background-position: 0 -100%;
+    color: white;
+}
+
+.ctahover {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, black 50%, white 50%);
+    -webkit-transition: background-position 0.25s ease-in-out;
+    -moz-transition: background-position 0.25s ease-in-out;
+    transition: background-position 0.25s ease-in-out;
+}
+
+.ctahover:hover{
+    background-position: -100% 0;
+    color: black;
+}
+
+.CTAHero{
+    transition: all 300ms ease-out;
+    display: inline-block;
+    position: relative;
+}
+
+.CTAHero:after{
+    content: "↗";
+    position: absolute;
+    transition: all 300ms ease-out;
+    display: inline-block;
+    right: 0;
+    transform: translate(-10px, 10px);
+    opacity: 0%;
+}
+
+.CTAHero:hover::after {
+    transform: translate(0px, 0px);
+    opacity: 100%;
+}
+
+.CTAHero:before{
+    content: "↗";
+    position: absolute;
+    transition: all 300ms ease-out;
+    display: inline-block;
+    right: 0;
+    opacity: 100%;
+}
+
+.CTAHero:hover::before {
+    transform: translate(10px, -10px);
+    opacity: 0%;
+}
+
+.CTAHero > span{
+    opacity: 0%;
+}
+
+/* animation class and keyframes */
+.overflow-hidden {
+    overflow: hidden;
+    display: flex;
+}
+   
+.drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+}
+   
+.drop-in-2 {
+ animation: drop-in 1200ms ease 300ms backwards;
+}
+
+@keyframes drop-in {
+from {
+     opacity: 0;
+     transform: translateY(100px);
+}
+to {
+     opacity: 1;
+     transform: translate(0px);
+}
+}
+   
+.heroSite{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

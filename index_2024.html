@@ -7,76 +7,93 @@
     <link rel="stylesheet" href="style_v2024.css">
 </head>
 <body>
-    <header class="gridColumns">
-        <div class="containerNav">
-            <nav>            
-                <a href="">
-                    <div id="logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="37" viewBox="0 0 65 37" fill="none">
-                            <g clip-path="url(#clip0_64_391)">
-                            <path d="M4.52473 0.898438H0V35.3526H4.52473V0.898438Z" fill="#221D1D"/>
-                            <path d="M7.54199 15.5293V35.3542H12.0676V19.9861H18.0561L30.0081 35.3542H35.7096L20.2907 15.5293H7.54199Z" fill="#221D1D"/>
-                            <path d="M57.111 29.4704V9.83789H52.5854V25.0135H46.667L34.8684 9.83789H29.167L44.4341 29.4704H57.111Z" fill="#221D1D"/>
-                            <path d="M7.54199 0.900391V12.5588H21.7809L40.7117 36.9H64.6531V9.8399H60.1284V32.4432H42.944L24.0139 8.102H12.0667V0.900391H7.54199Z" fill="#221D1D"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_64_391">
-                                <rect width="64.6529" height="36" fill="white" transform="translate(0 0.898438)"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <p>hugo voisin</p>
-                    </div></a>
-                <a href="">Project</a>
-                <a href="">Info</a>
-                <a href="">Contact</a>
-            </nav>
-            <div>
-                <span id="nav_clock_date" onload="showDate">date</span> •
-                <span id="nav_clock_time" onload="showTime">time</span>
-            </div>
-        </div>
-    </header>
-    
-    <div id="container">
-        <div id="hero" class="gridColumns">
-            <div id="heroTitle">
-                <h1>Design<br><span>&</span>Motion</h1>
-                <p>Hi, I’m Hugo.
-                    I’m a plurydisciplinary designer.</p>
-            </div>
-
-            <div class="heroImg" id="heroImgS">
-                <div id="imgS"></div>
-                <div class="heroImgText">
-                    <div class="heroImgLegende">
-                        <h3>Dinamo</h2>
-                        <p>2022</p>
-                    </div>
-
-                    <a href="">discover↗</a>
+    <div class="heroSite">
+        <header class="gridColumns">
+            <div class="containerNav">
+                <nav>            
+                    <a href="">
+                        <div id="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="37" viewBox="0 0 65 37" fill="none">
+                                <g clip-path="url(#clip0_64_391)">
+                                <path d="M4.52473 0.898438H0V35.3526H4.52473V0.898438Z" fill="#221D1D"/>
+                                <path d="M7.54199 15.5293V35.3542H12.0676V19.9861H18.0561L30.0081 35.3542H35.7096L20.2907 15.5293H7.54199Z" fill="#221D1D"/>
+                                <path d="M57.111 29.4704V9.83789H52.5854V25.0135H46.667L34.8684 9.83789H29.167L44.4341 29.4704H57.111Z" fill="#221D1D"/>
+                                <path d="M7.54199 0.900391V12.5588H21.7809L40.7117 36.9H64.6531V9.8399H60.1284V32.4432H42.944L24.0139 8.102H12.0667V0.900391H7.54199Z" fill="#221D1D"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_64_391">
+                                    <rect width="64.6529" height="36" fill="white" transform="translate(0 0.898438)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <p>hugo voisin</p>
+                        </div></a>
+                    <a href="">Project</a>
+                    <a href="">Info</a>
+                    <a href="">Contact</a>
+                </nav>
+                <div>
+                    <span id="nav_clock_date" onload="showDate">date</span> •
+                    <span id="nav_clock_time" onload="showTime">time</span>
                 </div>
             </div>
+        </header>
+        
+        <div class="container">
+            <div id="hero" class="gridColumns">
+                <div id="heroTitle">
+                    <h1>
+                        <span class="overflow-hidden">
+                            <span class="drop-in">Design</span>
+                        </span>
+                        <span class="overflow-hidden">
+                            <span class="drop-in-2">
+                                <span>&</span>Motion
+                            </span>
+                        </span>
+                    </h1>
 
-            <div class="heroImg" id="heroImgL">
-                <div id="imgL"></div>
-                <div class="heroImgText">
-                    <div class="heroImgLegende">
-                        <h3>Jaguar Rebrand</h2>
-                        <p>2022</p>
+                    <p class="drop-in-2" >Hi, I’m Hugo.
+                        I’m a plurydisciplinary designer.</p>
+                </div>
+
+                <div class="overflow-hidden" id="heroImgS">
+                    <div class="drop-in-2 heroImg" >
+                        <div id="imgS"></div>
+                        <div class="heroImgText">
+                        <div class="heroImgLegende">
+                            <h3>Dinamo</h2>
+                            <p>2022</p>
+                        </div>
+                        
+                        <a href="" class="CTAHero">discover<span>↗</span></a>
                     </div>
+                    </div>
+                </div>
 
-                    <a href="">discover↗</a>
+                <div class="overflow-hidden" id="heroImgL">
+                    <div class="heroImg drop-in">
+                        <div id="imgL"></div>
+                        <div class="heroImgText">
+                            <div class="heroImgLegende">
+                                <h3>Jaguar Rebrand</h2>
+                                <p>2022</p>
+                            </div>
+            
+                            <a href="" class="CTAHero">discover<span>↗</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+    </div>
 
+    <div class="container">
         <div id="ideas" class="gridColumns">
             <div class="textBloc">
                 <h2>Ideas</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
-                <a href="" class="CTA">WANT TO KNOW MORE ?</a>
+                <a href="" class="CTA ctahover">WANT TO KNOW MORE ?</a>
             </div>
 
             <div class="ideasList">
@@ -117,13 +134,13 @@
                     <div class="workItem">
                         <div id="workItem1" class="workItemImg"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
-                        <a href="" class="CTA">discover ↗</a>
+                        <a href="" class="CTA ctahover">discover ↗</a>
                     </div>
 
                     <div class="workItem">
                         <div id="workItem2" class="workItemImg"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
-                        <a href="" class="CTA">discover ↗</a>
+                        <a href="" class="CTA ctahover">discover ↗</a>
                     </div>
                 </div>
 
@@ -139,7 +156,7 @@
                 <div class="aboutMeText">
                     <h2>About<br>Me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
-                    <a href="" class="CTA">WANT TO KNOW MORE ?</a>
+                    <a href="" class="CTA ctahover">WANT TO KNOW MORE ?</a>
                 </div>
 
                 <div class="imgAboutMe">
@@ -147,6 +164,7 @@
 
             </div>
         </div>
+    </div>
     </div>
 
     <footer class="gridColumns">
