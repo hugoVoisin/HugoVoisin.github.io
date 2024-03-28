@@ -104,6 +104,15 @@ h2{
     text-transform: uppercase;
 }
 
+h4{
+    color: #221D1D;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 0.675rem */
+}
+
 #logo{
     display: flex;
     align-items: center;
@@ -572,4 +581,56 @@ to {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.footerColumns{
+    grid-column: 2 / span 12;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    padding-bottom: 5.625rem;
+}
+
+.footerColumnsMain{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+.footerColumnsSecond{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.footerColumnsItems{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.footerColumnsItems > h4{
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.footerColumnsItems > ul > li {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.footerColumnsItems > a > sup{
+    font-family: Inter;
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 300;
+    vertical-align: text-top;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
