@@ -684,6 +684,10 @@ to {
     padding: 5.625rem 0 5.625rem;
 }
 
+.paddingS{
+    padding: 2rem 0 2rem 0;
+}
+
 .gapS{
     gap: var(--gapS);
 }
@@ -708,6 +712,11 @@ to {
 .gridColumns10{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+}
+
+.gridColumns12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 
@@ -789,6 +798,14 @@ to {
     grid-column: span 5;
 }
 
+.grid10{
+    grid-column: span 10;
+}
+
+.grid12{
+    grid-column: span 12;
+}
+
 .smallproject > .projectImg{
     width: auto;
     aspect-ratio: 1.75 / 1;
@@ -800,4 +817,15 @@ to {
 
 .smallproject h2 {
     font-size: 3rem;
+}
+
+.projectTitle{
+    grid-column: 2 / span 12;
+}
+
+.projectTitle > p{
+    font-family: Inter;
+    font-size: 8rem;
+    line-height: 90%;
+    text-transform: uppercase;
 }

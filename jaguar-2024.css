@@ -1,0 +1,8 @@
+.heroSite{
+    background-image: url(img/jaguar_cover.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    aspect-ratio: 2.77 / 1;
+    width: 100%;
+}
