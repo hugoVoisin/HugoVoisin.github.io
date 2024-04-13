@@ -288,6 +288,7 @@ h4{
 .block-2-hero{
     display: flex;
     grid-column: 3 / 13;
+    padding-bottom: 5.625rem;
 }
 
 .oblong{
@@ -336,7 +337,6 @@ h4{
 .block-2-list{
     text-decoration: none;
     grid-column: 3 / span 10;
-    padding-top: 5.625rem;
 }
 
 .block-2-list > li {
@@ -371,21 +371,12 @@ h4{
     line-height: 90%; /* 1.8rem */
 }
 
-#aboutMe{
+#block-4{
     padding: 11.25rem 0 11.25rem;
 }
 
-#imgAboutMe{
-    background: url(img/hugo.webp);
-    background-size: cover;
-    background-position: center;
-    grid-column: 2 / span 4;
-    height: auto;
-    width: 100%;
-}
-
-.aboutMeText{
-    grid-column: 7 / span 4;
+.block-4-text{
+    grid-column: 8 / span 4;
     grid-row: 1;
     display: flex;
     gap:var(--gap);
@@ -393,14 +384,17 @@ h4{
     align-items: flex-start;
 }
 
-.imgAboutMe{
+#imgAboutMe{
     background: url(img/hugo.webp);
     background-size: cover;
     background-position: bottom;
+}
+
+.block-4-img{
     grid-column: 3 / span 4;
-    aspect-ratio: 1 / 1;
     height: auto;
     width: 100%;
+    aspect-ratio: 1;
 }
 
 footer{
@@ -597,7 +591,7 @@ to {
     display: flex;
     justify-content: space-between;
     gap: var(--gap);
-    padding-bottom: 5.625rem;
+    padding-bottom: calc(var(--gapM) * 2);
 }
 
 .footerColumnsMain{
@@ -692,6 +686,10 @@ to {
 
 .gapM{
     gap: var(--gapM);
+}
+
+.gapL{
+    gap: calc(var(--gapM) * 2);
 }
 
 .gridColumns14{
