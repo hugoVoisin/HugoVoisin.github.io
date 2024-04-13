@@ -8,63 +8,116 @@
     <link rel="stylesheet" href="contact-2024.css">
 </head>
 <body>
-    <div class="heroSite">
-        <header class="gridColumns">
-            <div class="containerNav">
-                <nav>            
-                    <a href="index_2024.html">
-                        <div id="logo">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="37" viewBox="0 0 65 37" fill="none">
-                                <g clip-path="url(#clip0_64_391)">
-                                <path d="M4.52473 0.898438H0V35.3526H4.52473V0.898438Z" fill="#221D1D"/>
-                                <path d="M7.54199 15.5293V35.3542H12.0676V19.9861H18.0561L30.0081 35.3542H35.7096L20.2907 15.5293H7.54199Z" fill="#221D1D"/>
-                                <path d="M57.111 29.4704V9.83789H52.5854V25.0135H46.667L34.8684 9.83789H29.167L44.4341 29.4704H57.111Z" fill="#221D1D"/>
-                                <path d="M7.54199 0.900391V12.5588H21.7809L40.7117 36.9H64.6531V9.8399H60.1284V32.4432H42.944L24.0139 8.102H12.0667V0.900391H7.54199Z" fill="#221D1D"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_64_391">
-                                    <rect width="64.6529" height="36" fill="white" transform="translate(0 0.898438)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            <p>hugo voisin</p>
-                        </div>
-                    </a>
-                    <a href="project-2024.html">Project</a>
-                    <a href="info-2024.html">Info</a>
-                    <a href="contact-2024.html">Contact</a>
-                </nav>
-                <div>
-                    <span id="nav_clock_date" onload="showDate">date</span> •
-                    <span id="nav_clock_time" onload="showTime">time</span>
-                </div>
-            </div>
-        </header>
-        
-        <div class="container contact">
-            <div class="form gridColumns">
-                <h1 class="overflow-hidden"><span class="drop-in-2">Contact</span></h1>
-                <form action="/my-handling-form-page" method="post">
-                      <div class="form__group">
-                        <input type="text" id="name" name="user_name" placeholder="Name" class="form__field"/>
-                        <label for="name" class="form__label">Name</label>
-                      </div>
-                      <div class="form__group">
-                        <input type="email" id="mail" name="user_email" placeholder="Email" class="form__field"/>
-                        <label for="mail" class="form__label">Email</label>
-                      </div>
-                      <div class="form__group">
-                        <textarea id="msg" name="user_message" placeholder="Your Message" class="form__field message"></textarea>
-                        <label for="msg" class="form__label">Message</label>
-                      </div>
-                      <button type="submit" class="CTA ctahover">Send your message</button>
-                  </form>
+    <header class="gridColumns">
+        <div class="containerNav">
+            <nav>            
+                <a href="index_2024.html">
+                    <div id="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="37" viewBox="0 0 65 37" fill="none">
+                            <g clip-path="url(#clip0_64_391)">
+                            <path d="M4.52473 0.898438H0V35.3526H4.52473V0.898438Z" fill="#221D1D"/>
+                            <path d="M7.54199 15.5293V35.3542H12.0676V19.9861H18.0561L30.0081 35.3542H35.7096L20.2907 15.5293H7.54199Z" fill="#221D1D"/>
+                            <path d="M57.111 29.4704V9.83789H52.5854V25.0135H46.667L34.8684 9.83789H29.167L44.4341 29.4704H57.111Z" fill="#221D1D"/>
+                            <path d="M7.54199 0.900391V12.5588H21.7809L40.7117 36.9H64.6531V9.8399H60.1284V32.4432H42.944L24.0139 8.102H12.0667V0.900391H7.54199Z" fill="#221D1D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_64_391">
+                                <rect width="64.6529" height="36" fill="white" transform="translate(0 0.898438)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <p>hugo voisin</p>
+                    </div>
+                </a>
+                <a href="project-2024.html">Project</a>
+                <a href="info-2024.html">Info</a>
+                <a href="contact-2024.html">Contact</a>
+            </nav>
+            <div>
+                <span id="nav_clock_date" onload="showDate">date</span> •
+                <span id="nav_clock_time" onload="showTime">time</span>
             </div>
         </div>
+    </header>
 
+    <div class="container">
+
+            <!-- Block 2 / EXTERNAL LINKS -->
+            <div id="block-2" class="gridColumns14 paddingM gapM">
+                <div class="block-2-title">
+                    <h1>Selected<br>Works</h1>
+                    <div class="oblong"><p>Updated Januar 2024</p></div>
+                </div>
+            </div>
+
+            <div class="gridColumns14 gapM rowgapXL">
+                <div class="project gapS flexColumn">
+                    <div class="projectImg "></div>
+                    <div class="flexRow gapS ">
+                        <h2 class="flex1">Jaguar</h2>
+                        <div class="flexColumn gapS flex1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+                            <a href="" class="CTA ctahover">Discover the full project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project gapM gridColumns10">
+                    <div class="projectImg grid6"></div>
+                    <div class="flexColumn gapM grid4">
+                        <h2>Jaguar</h2>
+                        <div class="flexColumn gapS">
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+                            <a href="" class="CTA ctahover">Discover the full project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project gridColumns10 gapM">
+                    <div class="smallproject flexColumn grid5 gapM">
+                        <div class="projectImg grid6"></div>
+                        <div class="flexColumn gapS grid4">
+                            <h2>Jaguar</h2>
+                            <div class="flexColumn gapS">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+                                <a href="" class="CTA ctahover">Discover the full project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="smallproject flexColumn grid5 gapM">
+                        <div class="projectImg grid6"></div>
+                        <div class="flexColumn gapS grid4">
+                            <h2>Jaguar</h2>
+                            <div class="flexColumn gapS">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+                                <a href="" class="CTA ctahover">Discover the full project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block-3" class="gridColumns14 paddingL gapM">
+                <div class="block-2-title">
+                    <h2>Older<br>projects</h2>
+                    <div class="oblong"><p>Updated Januar 2024</p></div>
+                </div>
+
+                <ul class="block-2-list">
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                </ul>
+            </div>
+    </div>      
 
     <footer class="gridColumns">
-
         <div class="footerColumns">
             <div class="footerColumnsMain">
                 <div class="footerColumnsItems">
@@ -120,7 +173,6 @@
                 <p>DESIGN AND coded BY your host</p>
             </div>
         </div>
-
     </footer>
 
     <script type="text/javascript">

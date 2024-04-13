@@ -680,6 +680,10 @@ to {
     padding: 11.25rem 0 11.25rem;
 }
 
+.paddingM{
+    padding: 5.625rem 0 5.625rem;
+}
+
 .gapS{
     gap: var(--gapS);
 }
@@ -692,10 +696,20 @@ to {
     gap: calc(var(--gapM) * 2);
 }
 
+.gapXL{
+    gap: calc(var(--gapM) * 4);
+}
+
 .gridColumns14{
     display: grid;
     grid-template-columns: repeat(14, 1fr);
 }
+
+.gridColumns10{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
 
 .block-3-gallery{
     grid-column: 3 / 9;
@@ -722,4 +736,68 @@ to {
 .flexColumn{
     display: flex;
     flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.project{
+    grid-column: 3 / span 10;
+}
+
+.project:nth-child(1) > .projectImg{
+    width: auto;
+    aspect-ratio: 2.77 / 1;
+    background-color: grey;
+    background-image: url(img/jaguar_cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project:nth-child(2) > .projectImg{
+    height: auto;
+    aspect-ratio: 1.75 / 1;
+    background-color: grey;
+    background-image: url(img/jaguar_cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.flex1{
+    flex: 1;
+}
+
+.rowgapXL{
+    row-gap: calc(var(--gapM) * 6);
+}
+
+.spacebetween{
+    justify-content: space-between;
+}
+
+.grid6{
+    grid-column: span 6;
+}
+
+.grid4{
+    grid-column: span 4;
+}
+
+.grid5{
+    grid-column: span 5;
+}
+
+.smallproject > .projectImg{
+    width: auto;
+    aspect-ratio: 1.75 / 1;
+    background-color: grey;
+    background-image: url(img/jaguar_cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.smallproject h2 {
+    font-size: 3rem;
 }
