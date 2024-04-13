@@ -1,4 +1,4 @@
-body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer {
+body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer, button {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -8,6 +8,15 @@ body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer {
     line-height: 1.5;
   }
 
+  button {
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 /* variable */
 :root {
     --background-color: #fff;
@@ -16,7 +25,8 @@ body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer {
     --placeholder: #e1e1e1;
     --global-theme-toggle-content: '🌞 DAY';
     scroll-behavior: smooth; 
-    --gap: 2rem;
+    --gapM: 2rem;
+    --gapS: 1rem;
   }
   
   /* dark theme*/
@@ -105,6 +115,11 @@ h2{
     text-transform: uppercase;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
 h4{
     color: #221D1D;
     font-family: Inter;
@@ -174,6 +189,13 @@ h4{
     background-position: center;
 }
 
+#imgI{
+    flex: auto;
+    background-image: url(img/hugo.webp);
+    background-size: cover;
+    background-position: center;
+}
+
 .heroImgText{
     display: flex;
     justify-content: space-between;
@@ -199,18 +221,13 @@ h4{
     color: #ff0000;
 }
 
-#ideas{
+#block-1{
     grid-template-areas: ". . text text text . list list list list list list . .";
-    padding: 11.25rem 0 11.25rem;
     align-items: flex-start;
-    gap: 2rem;
 }
 
-.textBloc{
+.block-1-text{
     grid-area: text;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
 }
 
 .CTA{
@@ -238,24 +255,20 @@ h4{
     box-shadow:inset 0px 0px 0px 1.2px #222;
 }
 
-.ideasList{
+.block-1-list{
     display: flex;
     grid-area: list;
     gap: 2rem;
 }
 
-.ideasList > ul {
-    flex: auto;
+.block-1-list > ul {
+    flex: 1;
     gap: 2rem;
     display: flex;
     flex-direction: column;
 }
 
-.ideasList > ul > li {
-    flex: auto;
-}
-
-.ideasList ul > li > p > span {
+.block-1-list ul > li > p > span {
     color: #221D1D;
     font-family: Inter;
     font-size: 3rem;
@@ -264,11 +277,7 @@ h4{
     line-height: 92%; /* 2.76rem */
 }
 
-#selectedWorks{
-    padding: 11.25rem 0 11.25rem;
-}
-
-.worksText{
+.block-2-title{
     display: flex;
     flex: auto;
     align-items: flex-start;
@@ -276,12 +285,9 @@ h4{
     grid-column: 2 / span 11;
 }
 
-.workList{
+.block-2-hero{
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    grid-column: 3 / span 10;
-    padding-bottom: 5.625rem;
+    grid-column: 3 / 13;
 }
 
 .oblong{
@@ -299,7 +305,7 @@ h4{
     color: #565656;
     }
 
-.workItem{
+.block-2-hero-item{
     display: flex;
     flex: auto;
     width: 10px;
@@ -307,9 +313,8 @@ h4{
     flex-direction: column;
 }
 
-.workItemImg {
+.block-2-hero-item-img {
     max-width: 100%;
-    height: auto;
     aspect-ratio: 16/10;
     background-position: center;
 }
@@ -328,13 +333,13 @@ h4{
     background-position: center;
 }
 
-.otherWork{
+.block-2-list{
     text-decoration: none;
     grid-column: 3 / span 10;
-
+    padding-top: 5.625rem;
 }
 
-.otherWork > li {
+.block-2-list > li {
     display: flex;
     padding: 1.875rem;
     justify-content: space-between;
@@ -350,7 +355,7 @@ h4{
     transition: background-position 0.5s ease-in-out;
 }
 
-.otherWork > li > h3 {
+.block-2-list > li > h3 {
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -358,7 +363,7 @@ h4{
     line-height: 90%; /* 1.8rem */
 }
 
-.otherWork > li > p {
+.block-2-list > li > p {
     font-family: Inter;
     font-size: 2rem;
     font-style: normal;
@@ -481,7 +486,6 @@ footer{
 .gridColumns{
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    gap: 1rem;
 }
 
 h1{
@@ -492,13 +496,14 @@ h2{
     font-size: 4rem;
 }
 
-#ideas{
-    display: flex!important;
+#block-2{
+    display: flex;
     flex-direction: column;
 }
+
 }
 
-.otherWork > li:hover {
+.block-2-list > li:hover {
     background-position: 0 -100%;
     color: white;
 }
@@ -675,4 +680,48 @@ to {
 
 .heroTitleText{
     width: calc(50% - 1rem);
+}
+
+.paddingL{
+    padding: 11.25rem 0 11.25rem;
+}
+
+.gapS{
+    gap: var(--gapS);
+}
+
+.gapM{
+    gap: var(--gapM);
+}
+
+.gridColumns14{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.block-3-gallery{
+    grid-column: 3 / 9;
+    display: flex;
+    height: fit-content;
+}
+
+.block-3-gallery > img {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #eee;
+}
+
+.gridColumns6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.block-3-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
 }
