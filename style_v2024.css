@@ -249,6 +249,7 @@ h4{
     line-height: 115%; /* 0.8625rem */
     width: fit-content;
     text-transform: uppercase;
+    margin-top: 1rem;
 }
 
 .CTA:hover{
