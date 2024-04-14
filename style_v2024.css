@@ -19,7 +19,8 @@ body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer, button {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Inter:wght@100..900&display=swap');
-@import url(https://db.onlinewebfonts.com/c/926fcaaa8b66e0df67e176f329259711?family=PP+Editorial+New);
+@import url(./font/PPEditorialNew-Italic.otf);
+@import url(./font/PPEditorialNew-Regular.otf);
 
 /* variable */
 :root {
@@ -102,7 +103,7 @@ h1{
 
 h1 > span > span > span{
     color: var(--text-color);
-    font-family: "PP Editorial New";
+    font-family: 'PP Editorial New';
     font-style: italic;
     font-size: 7.5rem;
 }
