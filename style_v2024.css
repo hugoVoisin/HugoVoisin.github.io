@@ -45,7 +45,7 @@ body,ul,p,h1,h2,h3,h4,h5,em,li,a, hr, footer, button {
   
   /* css */
   html {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: normal;
     box-sizing: border-box;
     color: var(--text-color);
@@ -103,7 +103,7 @@ h1{
 
 h1 > span > span > span{
     color: var(--text-color);
-    font-family: 'PP Editorial New';
+    font-family: "PP Editorial New";
     font-style: italic;
     font-size: 7.5rem;
 }
