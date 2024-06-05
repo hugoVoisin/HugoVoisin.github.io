@@ -1,303 +1,269 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hugo Voisin</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Voisin - Design&Motion</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="hero">
+        <header class="grid-c m-S">
+            <div class="c-header">
+                <a href="index_2024.html" class="logo">
+                    <svg  width="64.65" height="36.03" viewBox="0 0 64.65 36.03">
+                        <defs>
+                          <clipPath id="clip-a">
+                            <polygon points="57.11 28.57 57.11 8.94 52.6 8.94 52.6 24.1 46.68 24.1 34.87 8.94 29.17 8.94 44.43 28.57 57.11 28.57"/>
+                          </clipPath>
+                
+                          <clipPath id="clip-b">
+                            <polygon points="7.54 14.63 7.54 34.45 12.07 34.45 12.07 19.1 18.06 19.1 30 34.45 35.7 34.45 20.29 14.63 7.54 14.63"/>
+                          </clipPath>
+                        </defs>
 
-  <body>
-    <nav style="z-index: 1;">
-      <div class="nav_grid_container">
-        <div class="nav_first_item nav_item">
-          <div class="nav_clock_item">
-            <div id="nav_clock_world">
-                <a href="index.html">
-                  <i class="ri-global-line"></i>
+                        <line class="cls-6" x1="2.26" y1="34.45" x2="2.26"/>
+                        <polyline class="cls-6" points="9.8 0 9.8 9.43 22.89 9.43 41.82 33.77 62.39 33.77 62.39 8.94"/>
+                        <g class="clip-a">
+                          <polyline class="cls-6" points="54.85 8.94 54.85 26.33 45.56 26.33 30.95 7.56"/>
+                        </g>
+                        <g class="clip-b">
+                          <polyline class="cls-6" points="9.8 34.45 9.8 16.86 19.18 16.86 33.93 35.83"/>
+                        </g>
+                                        
+                        <line class="cls-4" x1="2.26" y1="34.45" x2="2.26"/>
+                        <polyline class="cls-4" points="9.8 0 9.8 9.43 22.89 9.43 41.82 33.77 62.39 33.77 62.39 8.94"/>
+                        <g class="clip-a">
+                          <polyline class="cls-4" points="54.85 8.94 54.85 26.33 45.56 26.33 30.95 7.56"/>
+                        </g>
+                        <g class="clip-b">
+                          <polyline class="cls-4" points="9.8 34.45 9.8 16.86 19.18 16.86 33.93 35.83"/>
+                        </g>
+                    </svg>
+                    <span class="drop-in-0 name">Hugo Voisin</span>
                 </a>
+
+                <nav>            
+                    <a href="project-2024.html">Project</a>
+                    <a href="info-2024.html">Info</a>
+                    <a href="contact-2024.html">Contact</a>
+                </nav>
+
+                <div class="clock">
+                    <span id="nav_clock_date" onload="showDate">date</span>
+                    <p id="nav_clock_time" onload="showTime">time</p>
+                </div>
+
+                <div id="burger-menu">
+                    <a href="" alt="">menu</a>
+                </div>
             </div>
-            <div id="nav_clock_date" class="nav_clock" onload="showDate()"></div>
-            <div id="nav_clock_time" onload="showTime()"></div> 
-          </div>
+        </header>
+        
+        <div class="grid-c grid-r hero-main">
+            <div class="hero-t overflow-hidden">
+                <h1 class="overflow-hidden">
+                    <span class="overflow-hidden block"><span class="drop-in-1 block">Design</span>
+                    </span>
 
-          <div class="hamburger">
-            <i class="ri-menu-line"></i>
-          </div>
+                    <span class="overflow-hidden block"><span class="drop-in-2 block"><span>&</span>Motion</span>
+                    </span>
+                </h1>
+        
+                <p class="drop-in-2 subtitle">Curious and persevering, with the internet and a little conviction nothing is impossible. I'm very interested in modular systems and typography as a whole.
+                </p>
+            </div>
+
+            <div class="overflow-hidden hero-img" id="heroImgS">
+                <a href="dinamo-2024.html" id="imgS"></a>
+                <div>
+                    <div>
+                        <h3>Dinamo</h2>
+                        <p>2022</p>
+                    </div>
+                    
+                    <a href="" class="CTAHero">discover<span>↗</span></a>
+                </div>
+            </div>
+
+            <div class="overflow-hidden hero-img" id="heroImgL">
+                <a href="jaguar-2024.html" id="imgL"></a>
+                <div>
+                    <div>
+                        <h3>Jaguar</h2>
+                        <p>2022</p>
+                    </div>
+                    
+                    <a href="">discover<span>↗</span></a>
+                </div>
+            </div>
         </div>
 
-        <div class="nav_item hamburgerItem nav_item bold"><a href="index.html">Home</a></div>
-        <div class="nav_item hamburgerItem nav_item bold"><a href="index_list.html">Index</a></div>
-        <div class="nav_item hamburgerItem nav_item bold"><a href="info.html">Info</a></div>
-
-        <div class="nav_last_item hamburgerItem nav_item">
-            <p class="languageSelector language_item_fr">FR</p>
-            <p class="language_item_l">|</p>
-            <p class="languageSelector language_item_en activeLanguage">EN</p>
+        <div class="mouse m-S overflow-hidden">
+            <svg width="20" height="20" viewBox="0 0 20 20" class="drop-in-1">
+                <path d="M7.14,2c-1.58,0-2.39.17-3.13.57-.63.34-1.11.82-1.45,1.45-.4.74-.57,1.55-.57,3.13v5.72c0,1.58.17,2.39.57,3.13.34.63.82,1.11,1.45,1.45.74.4,1.55.57,3.13.57h1.72c1.58,0,2.39-.17,3.13-.57.63-.34,1.11-.82,1.45-1.45.4-.74.57-1.55.57-3.13v-5.72c0-1.58-.17-2.39-.57-3.13-.34-.63-.82-1.11-1.45-1.45-.74-.4-1.55-.57-3.13-.57h-1.72ZM7.14,0h1.72c2.01,0,3.09.28,4.07.8.98.52,1.75,1.29,2.27,2.27.52.98.8,2.06.8,4.07v5.72c0,2.01-.28,3.09-.8,4.07-.52.98-1.29,1.75-2.27,2.27-.98.52-2.06.8-4.07.8h-1.72c-2.01,0-3.09-.28-4.07-.8-.98-.52-1.75-1.29-2.27-2.27-.52-.98-.8-2.06-.8-4.07v-5.72c0-2.01.28-3.09.8-4.07.52-.98,1.29-1.75,2.27-2.27.98-.52,2.06-.8,4.07-.8Z"/>
+                <rect class="w" x="7" y="4" width="2" height="5"/>
+            </svg>
+            <p class="drop-in-1">Scroll to discover</p>
         </div>
-      </div>
-      <hr class="separator">
-    </nav>
-
-    <div class="container_full">
-
-      <!-- Menu -->
-      <div class="menu_container">
-            <a href="./jaguar.html" class="menu_element el_1">
-                <div class="menu_img"></div>
-                <h1 class="menu_title_item">Jaguar</h1>
-
-                <div class="menu_info menu_flex_item">
-                <p>Branding,</p>
-                <p>2020</p>
-                </div>
-            </a>
-
-            <div class="spacer_0"></div>
-
-             <a href="./era.html" class="menu_element el_2">
-                <div class="menu_img">
-                </div>
-                <h1 class="menu_title_item">Era</h1>
-                <div class="menu_info menu_flex_item">
-                <p>Branding,</p>
-                <p>2019</p>
-                </div>
-            </a>
-
-            <a href="./printfolio.html" class="menu_element el_3">
-              <div class="menu_img">
-              </div>
-              <h1 class="menu_title_item">Print–<br>folio</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Print,</p>
-              <p>2020-2022</p>
-              </div>
-            </a>
-
-            <a href="./vox_atypi.html" class="menu_element el_4">
-              <div class="menu_img">
-              </div>
-              <h1 class="menu_title_item">Vox–<br>Atypi</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Print,</p>
-              <p>2020</p>
-              </div>
-            </a>
-
-            <a href="./made.html" class="menu_element el_5">
-              <div class="menu_img">
-              </div>
-              <h1 class="menu_title_item">Made</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Print,</p>
-              <p>2020</p>
-              </div>
-            </a>
-
-            <a href="./dinamo.html" class="menu_element el_6">
-              <div class="menu_img">
-              </div>
-              <h1 class="menu_title_item">Dinamo</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Branding,</p>
-              <p>2022</p>
-              </div>
-            </a>
-
-            <a href="./quechua.html" class="menu_element el_7">
-              <div class="menu_img">
-              </div>
-              <h1 class="menu_title_item">Quechua</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Print,</p>
-              <p>2020</p>
-              </div>
-            </a>
-
-            <a href="./captarget.html" class="menu_element el_7">
-              <div class="menu_img">
-              </div>
-              <h1 class="menu_title_item">CapTarget</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Branding & WebDesign,</p>
-              <p>2022—Now</p>
-              </div>
-            </a>
-
-            <a href="./logofolio.html" class="menu_element el_8">
-              <div class="menu_img"></div>
-              <h1 class="menu_title_item">Logo—<br>Folio</h1>
-              <div class="menu_info menu_flex_item">
-              <p>Logodesign,</p>
-              <p>2019-2022</p>
-              </div>
-            </a>
-      </div>
     </div>
 
-    <!-- footer -->
-      <footer>
-      <div class="footer_separator">
-        <hr class="separator_bottom">
-      </div>
+    <main>
+        <!-- Bloc 1 / ABOUT LIST -->
+        <div id="block-1" class="grid-c m-L m-b-L g-M">
+            <div class="text g-S">
+                <h2>Ideas</h2>
+                <p>After a scientific curriculum in high school with a cinema option, I joined Brassart school in Tours, France. During my time there, I was able to develop my drawing skills and discover new techniques that shaped my eye and my appetite for graphic design. I also learned and perfected my thinking, creative and software skills.</p>
+                <a href="" class="cta">GET IN TOUCH</a>
+            </div>
 
-      <div class="footer_container footerHome">
-        <div class="col_1">
-          <svg class="monogram" alt="Monogramme Hugo Voisin"  version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 346 121.2" style="enable-background:new 0 0 346 121.2;" xml:space="preserve"><g>
-            <rect x="0" y="0" width="15" height="116"/>
-            <polygon points="25,49.2 25,116 40,116 40,64.2 59.9,64.2 99.5,116 118.4,116 67.3,49.2 	"/>
-            <polygon points="189.3,96.2 189.3,30.1 174.3,30.1 174.3,81.2 154.7,81.2 115.6,30.1 96.7,30.1 147.3,96.2 	"/>
-            </g>
-            <polygon points="199.3,30.1 199.3,106.2 142.4,106.2 79.6,24.2 40,24.2 40,0 25,0 25,39.2 72.2,39.2 135,121.2 214.3,121.2 
-            214.3,30.1 "/>
-            <g>
-            <path d="M233.6,54.1v-24h4.6V40h9.6v-9.9h4.6v24h-4.6V43.9h-9.6v10.3H233.6z"/>
-            <path d="M258,45.6V30.1h4.6v15.6c0,1.5,0.4,2.8,1.2,3.7c0.8,0.9,2,1.3,3.6,1.3c1.6,0,2.8-0.4,3.6-1.3c0.8-0.9,1.2-2.1,1.2-3.7V30.1
-            h4.5v15.5c0,1.4-0.2,2.6-0.7,3.8s-1.1,2.1-1.9,2.9c-0.8,0.8-1.8,1.4-2.9,1.8c-1.1,0.4-2.5,0.6-3.9,0.6c-1.5,0-2.8-0.2-3.9-0.6
-            c-1.1-0.4-2.1-1-2.9-1.8c-0.8-0.8-1.4-1.7-1.9-2.8C258.2,48.3,258,47,258,45.6z"/>
-            <path d="M281.4,42.2c0-1.9,0.2-3.6,0.6-5.2c0.4-1.6,1.1-2.9,1.9-4c0.9-1.1,2-1.9,3.3-2.5c1.3-0.6,2.9-0.9,4.7-0.9
-            c1.3,0,2.4,0.2,3.5,0.5s2,0.9,2.8,1.5c0.8,0.7,1.4,1.5,1.9,2.4c0.5,1,0.8,2,0.8,3.2h-4.6c-0.3-2.5-1.9-3.8-4.8-3.8
-            c-1.5,0-2.8,0.4-3.8,1.3c-1,0.9-1.4,2.1-1.4,3.6v7.3c0,0.7,0.1,1.4,0.4,2c0.3,0.6,0.6,1.1,1.1,1.6c0.5,0.4,1,0.8,1.7,1
-            c0.6,0.2,1.3,0.4,2.1,0.4c1.5,0,2.8-0.4,3.7-1.2c0.9-0.8,1.4-2,1.4-3.7v-1h-4.9v-3.9h9.5v13.1H297l-0.1-2.2
-            c-1.2,1.8-3.1,2.7-5.8,2.7c-1.6,0-3-0.3-4.3-0.9c-1.2-0.6-2.2-1.5-3.1-2.6c-0.8-1.1-1.4-2.4-1.8-3.9
-            C281.6,45.7,281.4,44,281.4,42.2z"/>
-            <path d="M305.5,42.2c0-4.1,0.9-7.2,2.8-9.3c1.9-2.1,4.5-3.2,7.9-3.2c3.4,0,6,1.1,7.9,3.2s2.8,5.2,2.8,9.3c0,4.1-0.9,7.2-2.8,9.3
-            c-1.9,2.1-4.5,3.2-7.9,3.2c-3.4,0-6-1.1-7.9-3.2C306.4,49.4,305.5,46.3,305.5,42.2z M310.4,45.9c0,0.8,0.2,1.5,0.5,2.1
-            c0.3,0.6,0.7,1.1,1.2,1.6c0.5,0.4,1.1,0.7,1.8,0.9c0.7,0.2,1.4,0.3,2.2,0.3s1.6-0.1,2.2-0.3c0.7-0.2,1.3-0.5,1.8-0.9
-            c0.5-0.4,0.9-0.9,1.2-1.6s0.5-1.3,0.5-2.1v-7.4c0-0.8-0.2-1.5-0.5-2.1c-0.3-0.6-0.7-1.1-1.2-1.6c-0.5-0.4-1.1-0.7-1.8-1
-            c-0.7-0.2-1.4-0.3-2.2-0.3s-1.6,0.1-2.2,0.3c-0.7,0.2-1.3,0.5-1.8,1c-0.5,0.4-0.9,0.9-1.2,1.6c-0.3,0.6-0.5,1.3-0.5,2.1V45.9z"/>
-            </g>
-            <path d="M231.6,62.1h4.9l5.1,18.7h0.1l5-18.7h5l-7.6,24h-5.1L231.6,62.1z"/>
-            <path d="M254.9,74.1c0-4.1,0.9-7.2,2.8-9.3c1.9-2.1,4.5-3.2,7.9-3.2c3.4,0,6,1.1,7.9,3.2c1.9,2.1,2.8,5.2,2.8,9.3
-            c0,4.1-0.9,7.2-2.8,9.3s-4.5,3.2-7.9,3.2c-3.4,0-6-1.1-7.9-3.2C255.8,81.3,254.9,78.2,254.9,74.1z M259.8,77.8
-            c0,0.8,0.2,1.5,0.5,2.1c0.3,0.6,0.7,1.1,1.2,1.6c0.5,0.4,1.1,0.7,1.8,0.9c0.7,0.2,1.4,0.3,2.2,0.3c0.8,0,1.6-0.1,2.2-0.3
-            c0.7-0.2,1.3-0.5,1.8-0.9c0.5-0.4,0.9-0.9,1.2-1.6c0.3-0.6,0.5-1.3,0.5-2.1v-7.4c0-0.8-0.2-1.5-0.5-2.1c-0.3-0.6-0.7-1.1-1.2-1.6
-            c-0.5-0.4-1.1-0.7-1.8-1c-0.7-0.2-1.4-0.3-2.2-0.3c-0.8,0-1.6,0.1-2.2,0.3c-0.7,0.2-1.3,0.5-1.8,1c-0.5,0.4-0.9,0.9-1.2,1.6
-            c-0.3,0.6-0.5,1.3-0.5,2.1V77.8z"/>
-            <path d="M281.2,86.1v-24h4.6v24H281.2z"/>
-            <path d="M290.2,78.9h4.6c0.2,1.4,0.7,2.4,1.6,3c0.9,0.6,2.1,0.9,3.5,0.9c1.3,0,2.5-0.3,3.4-0.8c0.9-0.6,1.4-1.4,1.4-2.4
-            c0-0.9-0.3-1.5-0.8-2c-0.5-0.5-1.3-0.9-2.4-1.2l-4.7-1.2c-2-0.5-3.4-1.4-4.4-2.5c-1-1.2-1.4-2.6-1.4-4.4c0-1,0.2-1.9,0.6-2.7
-            c0.4-0.8,1-1.5,1.7-2.1s1.7-1,2.7-1.4c1.1-0.3,2.3-0.5,3.6-0.5c1.2,0,2.4,0.1,3.4,0.4c1.1,0.3,2,0.7,2.7,1.3
-            c0.8,0.6,1.4,1.3,1.9,2.3c0.5,0.9,0.8,2,0.9,3.2h-4.6c-0.1-0.7-0.2-1.2-0.5-1.7c-0.3-0.4-0.6-0.8-1-1.1c-0.4-0.3-0.9-0.5-1.4-0.6
-            c-0.5-0.1-1-0.2-1.6-0.2c-1.3,0-2.3,0.3-3,0.8c-0.7,0.5-1.1,1.2-1.1,2.1c0,0.9,0.3,1.6,0.9,2.1c0.6,0.5,1.4,0.9,2.6,1.2l4.1,1.1
-            c2,0.5,3.6,1.4,4.6,2.5c1,1.1,1.6,2.6,1.6,4.6c0,1.1-0.2,2.1-0.7,3c-0.4,0.9-1.1,1.6-1.9,2.2c-0.8,0.6-1.8,1.1-2.9,1.4
-            c-1.1,0.3-2.4,0.5-3.8,0.5c-1.3,0-2.6-0.1-3.7-0.4c-1.1-0.3-2.1-0.7-3-1.3c-0.9-0.6-1.6-1.4-2.1-2.4
-            C290.6,81.5,290.3,80.3,290.2,78.9z"/>
-            <path d="M313.8,86.1v-24h4.6v24H313.8z"/>
-            <path d="M324.4,86.1v-24h6.8l7.2,18.3h0.1V62.1h4.6v24h-6.9L329,67.8h-0.1v18.3H324.4z"/>
-          </svg>
-        </div>
-        <div class="col_2">
-          <div class="comptence">
-            <h2>Art Direction</h2>
-            <p>Graphic design</p>
-            <p>Motion & Film</p>
-            <p>TypeDesign</p>
-          </div>
-          <div class="legal">
-            <p>2022 — All rights reserved</p>
-          </div>
+            <div class="list g-M">
+                <ul>
+                    <li>
+                        <p><span>1.</span><br>Let’s it flow.</p>
+                    </li>
+                    <li>
+                        <p><span>2.</span><br>Sobriety and eco-conception.</p>
+                    </li>
+                    <li>
+                        <p><span>3.</span><br>Sobriety and eco-conception.</p>
+                    </li>
+                </ul>
 
+                <ul>
+                    <li>
+                        <p><span>4.</span><br>Graphic & Motion Designer, Buzznative®</p>
+                    </li>
+                    <li>
+                        <p><span>5.</span><br>Graphic & Motion Designer, Buzznative®</p>
+                    </li>
+                    <li>
+                        <p><span>6.</span><br>Graphic & Motion Designer, Buzznative®</p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="col_3 contact">
-          <a href="mailto:hugo.voisin@brassart.fr"><p>hugo.voisin@brassart.fr</p></a>
-          <a href="https://www.instagram.com/hugo.fontface"><p>Instagram</p></a>
-          <a href="https://www.behance.net/hugovoisin"><pBehance</p></a>
-          <!-- other links -->
-          <!-- 
-            <a href=""><p>Linkdin</p></a>
-            <a href=""><p>Dribble</p></a>
-          -->
+        <!-- Block 2 / EXTERNAL LINKS -->
+        <div id="block-2" class="grid-c m-b-L g-M">
+            <div class="title">
+                <h2>Selected<br>Works</h2>
+                <p class="update-tag">Updated Januar 2024</p>
+            </div>
+
+            <div class="content">
+                <div class="flex-r">
+                    <div href="HTML/jaguar.html" class="card">
+                        <img src="img/jaguar_cover.png" alt="projet-jaguar">
+                        <div>
+                            <h3>Jaguar Rebrand</h3>
+                            <p>2022</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
+                        <a href="" class="cta ctahover">VIEW THE FULL PROJECT</a>
+                    </div>
+
+                    <div href="HTML/jaguar.html" class="card">
+                        <img src="img/jaguar_cover.png" alt="projet-jaguar">
+                        <div>
+                            <h3>Jaguar Rebrand</h3>
+                            <p>2022</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
+                        <a href="" class="cta ctahover">VIEW THE FULL PROJECT</a>
+                    </div>
+                </div>
+
+                <ul class="link">
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                    <li><h3>CAPTARGET</h3><p>↘</p></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </footer>  
+        
+        <!-- Block 3 / ABOUT ME -->
+        <div id="block-3" class="grid-c m-b-L g-M">
+            <img src="img/hugo.webp" alt="ma tete">
+            <div class="title">
+                <h2>About<br>Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.</p>
+                <a href="" class="cta">WANT TO KNOW MORE ?</a>
+            </div>
 
-    <script type="text/javascript">
-      function showTime(){
-      var date = new Date();
-      var h = date.getHours(); // 0 - 23
-      var m = date.getMinutes(); // 0 - 59
-      var s = date.getSeconds(); // 0 - 5
+            <div class="block-4-img" id="imgAboutMe">
+            </div>
 
-      h = (h < 10) ? "0" + h : h;
-      m = (m < 10) ? "0" + m : m;
-      s = (s < 10) ? "0" + s : s;
-      
-      var time = h + ":" + m + ":" + s ;
-      document.getElementById("nav_clock_time").innerText = time;
-      document.getElementById("nav_clock_time").textContent = time;
-      
-      setTimeout(showTime, 1000);
-      
-    }
+        </div>
+    </main>
 
-    showTime();
+    <!-- Footer -->
+    <footer class="gapL">
+        <div class="cta-big ">
+            <p>Contact me<span>↘</span></p>
+        </div>
 
-    function showDate(){
-      var date = new Date();
-      var y = date.getFullYear(); // 2022 - XXXX
-      var mth = date.getMonth(); // 1 - 12
-      var d = date.getDay(); // 1 - 31
+        <div class="footer-links">
+            <div class="site-link">
+                <div>
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Info</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
 
-      mth = (mth < 10) ? "0" + mth : mth;
-      d = (d < 10) ? "0" + d : d;
-      
-      var time = y + "." + d + "." + mth + " — ";
-      document.getElementById("nav_clock_date").innerText = time;
-      document.getElementById("nav_clock_date").textContent = time;
-      
-      setTimeout(showDate, 1000);
-      
-    }
+                <div>
+                    <h4>Downloads</h4>
+                    <a href="" class="cta">OFFLINE PORTFOLIO<sup>(5MO)</sup> ↓</a>
+                    <a href="" class="cta">Curriculum vitæ<sup>(340kO)</sup> ↓</a>
+                </div>
 
-    showDate();
-    </script>
+                <div>
+                    <h4>Eco-build</h4>
+                    <p>This website has been build to  </p>
+                    <a href="" class="cta">LEARN MORE ABOUT THAT ↗</a>
+                </div>
+            </div>
 
-    <script type="text/javascript">
-      const hamburger = document.querySelector(".hamburger")
-      const hamburgerItem = document.querySelectorAll(".hamburgerItem")
+            <div class="more">
+                <h4>More</h4>
+                <div class="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  fill="#000">
+                            <path d="M18.212 12.5607L15.8405 10.7317C15.6846 10.6115 15.6846 10.376 15.8405 10.2558L18.212 8.42689C18.4897 8.20111 18.2347 7.76093 17.9001 7.88763L15.1291 9.02624C14.9472 9.10096 14.7441 8.98401 14.7165 8.7891L14.3186 5.81993C14.2617 5.46584 13.7533 5.46584 13.6948 5.81993L13.2969 8.7891C13.2709 8.98401 13.0679 9.10096 12.8843 9.02624L10.1133 7.88763C10.0419 7.86001 9.97364 7.86001 9.91354 7.87788C9.90055 7.88113 9.88918 7.88438 9.87618 7.88925L7.10517 9.02787C6.92325 9.10258 6.72022 8.98564 6.69261 8.79072L6.29791 5.8183C6.24106 5.46421 5.73266 5.46421 5.67419 5.8183L5.27462 8.78747C5.24863 8.98239 5.0456 9.09933 4.86205 9.02462L2.09429 7.886C1.75969 7.75931 1.50468 8.19949 1.78243 8.42526L4.15387 10.2542C4.3098 10.3744 4.3098 10.6099 4.15387 10.7301L1.78243 12.5607C1.50468 12.7864 1.75969 13.2266 2.09429 13.0999L4.8653 11.9613C5.04722 11.8866 5.25025 12.0035 5.27787 12.1984L5.67744 15.1676C5.73429 15.5217 6.24268 15.5217 6.30116 15.1676L6.70073 12.1984C6.72672 12.0035 6.92975 11.8866 7.11329 11.9613L9.88431 13.0999C9.95577 13.1275 10.024 13.1275 10.0825 13.1097C10.0955 13.1064 10.1068 13.1032 10.1198 13.0983L12.8908 11.9597C13.0728 11.885 13.2758 12.0019 13.3034 12.1968L13.7013 15.166C13.7582 15.5201 14.2666 15.5201 14.3251 15.166L14.723 12.1968C14.749 12.0019 14.952 11.885 15.1356 11.9597L17.9066 13.0983C18.2412 13.225 18.4962 12.7848 18.2184 12.559L18.212 12.5607ZM12.1745 10.7301L9.99638 12.4112L7.81823 10.7317C7.6623 10.6115 7.6623 10.376 7.81823 10.2558L9.99638 8.57469L12.1745 10.2542C12.3305 10.3744 12.3305 10.6099 12.1745 10.7301Z" fill="white"/>
+                        </svg>
+                    </a>
 
-      hamburger.addEventListener("click", () => {
-        Array.from( hamburgerItem ).forEach(function(hamburgerItem){
-        hamburgerItem.classList.toggle("active")
-    })});
-    </script>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#000">
+                        <path d="M10.0013 7.99154C8.62015 7.99154 7.5013 9.11079 7.5013 10.4915C7.5013 11.8726 8.62057 12.9915 10.0013 12.9915C11.3824 12.9915 12.5013 11.8723 12.5013 10.4915C12.5013 9.11045 11.3821 7.99154 10.0013 7.99154ZM10.0013 6.32487C12.3017 6.32487 14.168 8.18912 14.168 10.4915C14.168 12.792 12.3037 14.6582 10.0013 14.6582C7.70091 14.6582 5.83464 12.794 5.83464 10.4915C5.83464 8.19114 7.69889 6.32487 10.0013 6.32487ZM15.418 6.11583C15.418 6.69092 14.9507 7.15751 14.3763 7.15751C13.8012 7.15751 13.3347 6.6902 13.3347 6.11583C13.3347 5.54145 13.8019 5.07487 14.3763 5.07487C14.9499 5.07414 15.418 5.54145 15.418 6.11583ZM10.0013 3.82487C7.93924 3.82487 7.60314 3.83033 6.64404 3.87304C5.99061 3.90371 5.55259 3.99159 5.14562 4.14959C4.78395 4.28986 4.52306 4.45735 4.24509 4.73533C3.96604 5.01437 3.79885 5.27456 3.65915 5.63639C3.50079 6.0443 3.41293 6.48163 3.3828 7.13416C3.33968 8.0542 3.33464 8.37574 3.33464 10.4915C3.33464 12.5536 3.34009 12.8897 3.38279 13.8487C3.41349 14.5019 3.50149 14.9405 3.6591 15.3465C3.79974 15.7087 3.96757 15.9702 4.2442 16.2469C4.52434 16.5266 4.78531 16.6944 5.14371 16.8327C5.55564 16.992 5.99339 17.08 6.64392 17.11C7.56397 17.1531 7.88551 17.1582 10.0013 17.1582C12.0634 17.1582 12.3995 17.1527 13.3585 17.11C14.0102 17.0795 14.4492 16.9912 14.8563 16.8337C15.2175 16.6934 15.4798 16.525 15.7567 16.2486C16.0368 15.968 16.2042 15.7077 16.3427 15.3485C16.5016 14.938 16.5897 14.4997 16.6198 13.849C16.6629 12.9289 16.668 12.6073 16.668 10.4915C16.668 8.42947 16.6625 8.09338 16.6198 7.13434C16.5892 6.48242 16.5009 6.04278 16.3432 5.63585C16.2033 5.27519 16.0352 5.01349 15.7575 4.73533C15.478 4.45583 15.2185 4.28898 14.8564 4.14939C14.4488 3.99115 14.0108 3.90317 13.3587 3.87304C12.4387 3.82991 12.1171 3.82487 10.0013 3.82487ZM10.0013 2.1582C12.2652 2.1582 12.5478 2.16654 13.4367 2.2082C14.3235 2.24918 14.9284 2.38945 15.4597 2.5957C16.0089 2.80751 16.4728 3.09362 16.936 3.55681C17.3985 4.02001 17.6847 4.48529 17.8972 5.0332C18.1027 5.56376 18.243 6.16931 18.2847 7.05612C18.3242 7.94501 18.3347 8.22764 18.3347 10.4915C18.3347 12.7555 18.3263 13.038 18.2847 13.927C18.2437 14.8138 18.1027 15.4186 17.8972 15.9499C17.6853 16.4992 17.3985 16.963 16.936 17.4263C16.4728 17.8888 16.0068 18.1749 15.4597 18.3874C14.9284 18.593 14.3235 18.7332 13.4367 18.7749C12.5478 18.8145 12.2652 18.8249 10.0013 18.8249C7.73741 18.8249 7.45477 18.8165 6.56589 18.7749C5.67908 18.7339 5.07491 18.593 4.54297 18.3874C3.99435 18.1755 3.52977 17.8888 3.06658 17.4263C2.60339 16.963 2.31797 16.4971 2.10547 15.9499C1.89922 15.4186 1.75964 14.8138 1.71797 13.927C1.67839 13.038 1.66797 12.7555 1.66797 10.4915C1.66797 8.22764 1.6763 7.94501 1.71797 7.05612C1.75894 6.16862 1.89922 5.56445 2.10547 5.0332C2.31727 4.48459 2.60339 4.02001 3.06658 3.55681C3.52977 3.09362 3.99505 2.8082 4.54297 2.5957C5.07422 2.38945 5.67839 2.24987 6.56589 2.2082C7.45477 2.16862 7.73741 2.1582 10.0013 2.1582Z" fill="white"/>
+                        </svg>
+                    </a>
 
-    <script>
-      const en = document.querySelectorAll(".en")
-      console.log(en)
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#000">
+                        <path d="M5.78357 4.65961C5.78326 5.3382 5.37157 5.94885 4.74262 6.20361C4.11367 6.45838 3.39306 6.30638 2.92059 5.81929C2.44811 5.3322 2.31813 4.60729 2.59192 3.98639C2.86572 3.36549 3.48862 2.97258 4.1669 2.99294C5.06779 3.01998 5.78398 3.75831 5.78357 4.65961ZM5.83357 7.55961H2.50024V17.9929H5.83357V7.55961ZM11.1003 7.55961H7.78357V17.9929H11.0669V12.5179C11.0669 9.46792 15.0419 9.18458 15.0419 12.5179V17.9929H18.3336V11.3846C18.3336 6.24294 12.4503 6.43461 11.0669 8.95958L11.1003 7.55961Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-      const fr = document.querySelectorAll(".fr")
-      console.log(fr)
+        <div class="credit">
+            <p class="citation"><span>Weniger Aber Besser,</span> Dieter Rams</p>
+            <div>
+                <p>©2024 - Hugo voisin</p>
+                <p>DESIGN AND coded BY your host</p>
+            </div>
+        </div>
+    </footer>
 
-      const buttonFR = document.querySelector(".language_item_fr")
-      const buttonEN = document.querySelector(".language_item_en")
+    <script src="JS/clock-min.js" defer async></script>
 
-    console.log(buttonEN, buttonFR)
-
-      buttonFR.addEventListener("click", () => {
-        buttonFR.classList.add("activeLanguage")
-        buttonEN.classList.remove("activeLanguage")
-        Array.from( en ).forEach(function(en){
-        en.classList.remove("active")})
-        Array.from( fr ).forEach(function(fr){
-        fr.classList.add("active")})})
-
-
-      buttonEN.addEventListener("click", () => {
-        buttonFR.classList.remove("activeLanguage")
-        buttonEN.classList.add("activeLanguage")
-        Array.from( en ).forEach(function(en){
-        en.classList.add("active")})
-        Array.from( fr ).forEach(function(fr){
-        fr.classList.remove("active")})});
-    </script>
-
-  </body>
+</body>
 </html>
