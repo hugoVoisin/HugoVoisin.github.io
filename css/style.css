@@ -322,14 +322,14 @@
   
   #imgS {
     flex: auto;
-    background-image: url(img/jaguar_cover.png);
+    background-image: url(/img/jaguar_cover.png);
     background-size: cover;
     background-position: center;
   }
   
   #imgL {
     flex: auto;
-    background-image: url(img/jaguar_cover.png);
+    background-image: url(/img/jaguar_cover.png);
     background-size: cover;
     background-position: center;
   }
